@@ -3,53 +3,13 @@
  * Copyright 2013-2018 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
  */
-body,html{
-    width:100%;
-    height:100%
-}
-body{
-    font-family:Merriweather,'Helvetica Neue',Arial,sans-serif,Microsoft JhengHei
-}
+
 body{
     width: 100%;
   
     overflow-x: hidden;
 }
 
-.spinner{
-    width: 80px;
-    height: 80px;
-    
-    border: 2px solid #f3f3f3;
-    border-top:3px solid #f25a41;
-    border-radius: 100%;
-    
-    position: absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right: 0;
-    margin: auto;
-    
-    animation: spin 1s infinite linear;
-}
-
-@keyframes spin {
-    from{
-        transform: rotate(0deg);
-    }to{
-        transform: rotate(360deg);
-    }
-}
-
-#overlay{
-  height:100%;
-  width:100%;
-  background:rgba(0, 0, 0, 1);
-  position:fixed;
-  left:0;
-  top:0;
- }
 hr{
     max-width:100%;
     border-width:1px;
@@ -71,18 +31,7 @@ a{
 a:hover{
     color:#f05f40
 }
-h1,h2,h3,h4,h5,h6
-{font-family:'Open Sans','Helvetica Neue',Arial,sans-serif,Microsoft JhengHei
-}
-.bg-primary{
-    background-color:#f05f40!important
-}
-.bg-dark{
-    background-color:#212529!important
-}
-.text-faded{
-    color:rgba(255,255,255,.7)
-}
+
 section{
     padding:6rem 0
 }
@@ -91,29 +40,7 @@ section{
     margin-top:0;
 }
 
-::-moz-selection{
-    color:#fff;
-    background:#212529;
-    text-shadow:none
-}
-::selection{
-    color:#fff;
-    background:#212529;
-    text-shadow:none
-}
-img::-moz-selection{
-    color:#fff;
-    background:0 0
-}
-img::selection{
-    color:#fff;
-    background:0 0
-}
-img::-moz-selection{
-    color:#fff;
-    background:0 0
-}
-}
+
 #mainNav{
     border-bottom:1px solid rgba(33,37,41,.1);
     background-color:#fff;
@@ -224,56 +151,7 @@ header.masthead p{
     max-width:650px;
     margin:0 auto
 }
-.portfolio-box .portfolio-box-caption{
-    position:absolute;
-    bottom:0;
-    display:block;
-    width:100%;
-    height:100%;
-    text-align:center;
-    opacity:0;
-    color:#fff;
-    background:rgba(240,95,64,.9);
-    -webkit-transition:all .2s;
-    transition:all .2s
-}
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content{
-    position:absolute;
-    top:50%;
-    width:100%;
-    -webkit-transform:translateY(-50%);
-    transform:translateY(-50%);
-    text-align:center
-}
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name{
-    padding:0 15px;
-    font-family:'Open Sans','Helvetica Neue',Arial,sans-serif,Microsoft JhengHei
-}
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category{
-    font-size:14px;
-    font-weight:600;
-    text-transform:uppercase
-}
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name{
-    font-size:18px
-}
-.portfolio-box:hover .portfolio-box-caption{
-    opacity:1
-}
-.portfolio-box:focus{
-    outline:0
-}
-@media (min-width:768px){
-    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category{
-        font-size:16px
-    }
-    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name{
-        font-size:22px
-    }
-}
-.text-primary{
-    color:#f05f40!important
-}
+
 .btn{
     font-weight:700;
     text-transform:uppercase;
@@ -314,14 +192,7 @@ header.masthead p{
    font-weight: 650;
    color: white;
 }
-.space{
-    white-space:nowrap;
 
-}
-.video{
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
 .count-font{
     font-family:Microsoft JhengHei;
     color: white;
@@ -333,11 +204,7 @@ header.masthead p{
     font-family:微軟正黑體;
     font-size: 18px;
 }
-.responsive {
-    margin-top: 75px;
-    align-items: center;
-    
-}
+
 .section-title{
     font-family:Microsoft JhengHei;
     color: #404040;
@@ -371,52 +238,7 @@ header.masthead p{
 .line-height-40{
     line-height: 40px;
 }
-.project{
-    background-color: white;
-}
-.pro-title{
-    font-size: 60px;
-    color: #333333;
-}
-.pro-text-nepal{
-    font-size: 45px;
-    color: #fff;
-    font-weight:bolder;
-    background-color: rgb(89, 89, 89,0.6);
-    width: 250px;
-    margin-left: 450px;
-    border-radius: 10px;
-}.pro-text-indoniesia{
-    font-size: 45px;
-    color: #fff;
-    font-weight:bolder;
-    background-color: rgb(89, 89, 89,0.6);
-    width: 200px;
-    margin-left: 450px;
-    border-radius: 10px;
-}.pro-text-columbia{
-    font-size: 45px;
-    color: #fff;
-    font-weight:bolder;
-    background-color: rgb(89, 89, 89,0.6);
-    width: 300px;
-    margin-left: 450px;
-    border-radius: 10px;
-}.pro-text-maxico{
-    font-size: 45px;
-    color: #fff;
-    font-weight:bolder;
-    background-color: rgb(89, 89, 89,0.6);
-    width: 250px;
-    margin-left: 450px;
-    border-radius: 10px;
-}
-.pro-img{
-    height: 480px;
-    overflow: hidden;
-    font-family:Microsoft JhengHei;
-    border-radius: 10px;
-}
+
 .section-grbacolor{
     background-color:#e6e6e6
 }
@@ -432,24 +254,7 @@ header.masthead p{
 .section-count{
     padding: 1rem 0 
 }
-.btn-sdg{
-    width: 700px;
-    border: 2px solid black;
 
-    background-color: white;
-    color:#037ef3;
-    border-color: #037ef3;
-    padding: 5px;
-    font-size: 18px;
-    font-weight:700;
-    cursor: pointer;
-    border-radius:8px;
-    font-family:'Open Sans','Helvetica Neue',Arial,sans-serif,Microsoft JhengHei;
-}
-.btn-sdg:hover {
-    background: #037ef3;
-    color: white;
-}
 .header-font{
     font-family:Microsoft JhengHei;
     color:#f2f2f2;
@@ -489,31 +294,3 @@ header.masthead p{
 .dropdown:hover .dropdown-content {
   display: block;
 }
-.logo{
-    display:block;
-    margin:auto;
-    margin-top: 100px;
-}
-p.header-font1{
-    color:white;
-    font-family: Microsoft JhengHei;
-}
-h1.header-font2{
-    color:white;
-    font-family: Microsoft JhengHei;
-    font-weight: 700;
-}
-p.header-font3{
-    color:black;
-    font-family: Microsoft JhengHei;
-}
-a.header-font3{
-    color:white;
-    font-family: Microsoft JhengHei;
-    font-weight: 1000;
-}
-p.contact-2{
-    font-size:16px;
-    margin: 10px;
-}
-
