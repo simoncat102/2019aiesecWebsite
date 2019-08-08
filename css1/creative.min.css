@@ -3,78 +3,37 @@
  * Copyright 2013-2018 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
  */
-@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 body,html{
     width:100%;
     height:100%;
-    
-}
-
-body{
-    font-family:Merriweather,'Helvetica Neue',Arial,sans-serif;
-    overflow-x: auto;
-    
-}
-body{
-    width: 100%;
-  
     overflow-x: hidden;
 }
-
-.spinner{
-    width: 80px;
-    height: 80px;
-    
-    border: 2px solid #f3f3f3;
-    border-top:3px solid #037ef3;
-    border-radius: 100%;
-    
-    position: absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right: 0;
-    margin: auto;
-    
-    animation: spin 1s infinite linear;
+body{
+    font-family:Merriweather,'Helvetica Neue',Arial,sans-serif,Microsoft JhengHei
 }
-
-@keyframes spin {
-    from{
-        transform: rotate(0deg);
-    }to{
-        transform: rotate(360deg);
-    }
-}
-
-#overlay{
-  height:100%;
-  width:100%;
-  background:rgba(0, 0, 0, 1);
-  position:fixed;
-  left:0;
-  top:0;
- }
 hr{
-    max-width:50px;
-    border-width:3px;
-    border-color:#fff
+    max-width:100%;
+    border-width:1px;
+    align-content: left;
+    border-color:rgb(240, 95, 64)
+
 }
 hr.light{
-    border-color:#666666;
-    max-width:100%;
-    border-width:2px;
-    margin-bottom: 10px;
+    border-color:#fff
+}
+hr.gray{
+    border-color:#b3b3b3
+
 }
 a{
-    color:#037ef3;
+    color:#f05f40;
     -webkit-transition:all .2s;transition:all .2s
 }
 a:hover{
-    color:#81c1fe;
+    color:#f05f40
 }
 h1,h2,h3,h4,h5,h6
-{font-family:'Open Sans','Helvetica Neue',Arial,sans-serif
+{font-family:'Open Sans','Helvetica Neue',Arial,sans-serif,Microsoft JhengHei
 }
 .bg-primary{
     background-color:#f05f40!important
@@ -88,20 +47,11 @@ h1,h2,h3,h4,h5,h6
 section{
     padding:6rem 0
 }
+
 .section-heading{
-    margin-top:0
+    margin-top:0;
 }
-.section-title{
-    font-family:Microsoft JhengHei;
-    color: #404040;
-    font-size: 2em;
-    font-weight: bold;
-}
-.section-text{
-   font-family:Microsoft JhengHei;
-   color: #666666;
-   font-size: 17px; 
-}
+
 ::-moz-selection{
     color:#fff;
     background:#212529;
@@ -124,32 +74,7 @@ img::-moz-selection{
     color:#fff;
     background:0 0
 }
-
-.video-container {
-
-position: relative;
-
-/*
-padding-bottom: 56.25%;
-
-padding-top: 30px;
-*/
-
-height: auto;
-
-overflow: hidden;
-
 }
-
-.video-container iframe, .video-container object, .video-container embed {
-
-position: absolute;
-
-top: 0;left: 0;
-
-width: 100%;
-
-height: 100%;}
 #mainNav{
     border-bottom:1px solid rgba(33,37,41,.1);
     background-color:#fff;
@@ -168,7 +93,7 @@ height: 100%;}
     color:rgba(255,255,255,.7)
 }
 #mainNav .navbar-nav>li.nav-item>a.nav-link.active,#mainNav .navbar-nav>li.nav-item>a.nav-link:focus.active{
-    color:rgba(38,38,38)!important;
+    color:rgba(38, 38, 38)!important;
     background-color:transparent
 }
 #mainNav .navbar-nav>li.nav-item>a.nav-link.active:hover,#mainNav .navbar-nav>li.nav-item>a.nav-link:focus.active:hover{
@@ -212,21 +137,12 @@ height: 100%;}
         color:#262626
     }
 }
-.parallax {
-  background-image: url("../img/GV_returnee_1.JPG");
-  min-height: 700px; 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 header.masthead{
-    padding-top:10rem;
-    padding-bottom:calc(10rem - 56px);
-    background-image:url(../img/landing_page_header.jpg);
+    
+    background-image:url(../img1/header2.JPG);
+    background-attachment:fixed;
     background-position:center center;
-    background-size:cover;
-    background-attachment: fixed;
+    background-size:cover
 }
 header.masthead hr{
     margin-top:30px;
@@ -265,10 +181,11 @@ header.masthead p{
 .portfolio-box{
     position:relative;
     display:block;
-    max-width:650px
-        ;margin:0 auto
+    max-width:650px;
+    margin:0 auto
 }
-.portfolio-box .portfolio-box-caption{                   position:absolute;
+.portfolio-box .portfolio-box-caption{
+    position:absolute;
     bottom:0;
     display:block;
     width:100%;
@@ -290,7 +207,7 @@ header.masthead p{
 }
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name{
     padding:0 15px;
-    font-family:'Open Sans','Helvetica Neue',Arial,sans-serif
+    font-family:'Open Sans','Helvetica Neue',Arial,sans-serif,Microsoft JhengHei
 }
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category{
     font-size:14px;
@@ -321,72 +238,26 @@ header.masthead p{
     font-weight:700;
     text-transform:uppercase;
     border:none;
-    border-radius:15px;
-    font-family:'Open Sans','Helvetica Neue',Arial,sans-serif
+    border-radius:300px;
+    font-family:'Open Sans','Helvetica Neue',Arial,sans-serif,Microsoft JhengHei
 }
 .btn-xl{
     padding:1rem 2rem
 }
 .btn-primary{
     background-color:#037ef3;
-    border-color:#037ef3
+    border-color:#037ef3;
 }
 .btn-primary:active,.btn-primary:focus,.btn-primary:hover{
     color:#fff;
-    background-color:#4ea9fd!important;
+    background-color:#037ef3!important
 }
-
-.header-font{
-    color:white;
-    font-family: Microsoft JhengHei;
-    font-size: 72px ;
-}
-    
-.bg-blue{
-    background-color: #037ef3;
-}
-.text-white1{
-    color:#e6f3ff;
-}
-.qa-text-color{
-    color:red;
-}
-project-text1{
-    color:red;
-    font-family: Microsoft JhengHei;
-    font-size: 16px;
-}
-sideshow-size{
-    max-height: inherit;
-}
-.h-80{
-    height: 368px;
-}
-
-.project-title{
-    color:white;
-    font-family: Microsoft JhengHei;
-    font-size: 32px;
-    margin-top: 15px;
-
-}
-.project-title1{
-    color:black;
-    font-family: Microsoft JhengHei;
-    font-size: 32px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-
-}
-
-.count-font{
-    font-family:Microsoft JhengHei;
-    color: white;
-    font-size: 19px;
-    font-weight:650;
+.btn-primary:active,.btn-primary:focus{
+    -webkit-box-shadow:0 0 0 .2rem rgba(2, 79, 151,.7)!important;
+    box-shadow:0 0 0 .2rem rgba(2, 79, 151,.7)!important
 }
 .stat-wrap{
-   background: #037ef3;
+   background: #f85a40;
    -webkit-display: flex;
    -moz-display: flex;
    -ms-display: flex;
@@ -403,116 +274,165 @@ sideshow-size{
    font-weight: 650;
    color: white;
 }
-.section-count{
-    padding: 0 0 
+.space{
+    white-space:nowrap;
+
 }
-.ddiv
-{
+.video{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.count-font{
+    font-family:Microsoft JhengHei;
     color: white;
-    font-size: 18px;
-    font-family: Microsoft JhengHei;
-border:2px solid;
-border-radius:25px;
--moz-border-radius:25px; /* Old Firefox */
+    font-size: 23px;
+    font-weight:650;
 }
-.nav-oppo{
-    color:#fff;
+.sdg-font{
+    color: #666666;
+    font-family:微軟正黑體;
     font-size: 18px;
 }
-
-.preloader{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #000;
-    transition: 1s;
-}
-.preloader:before{
-    content: '';
-    position: absolute;
-    right:  0;
-    width: 50%;
-    height: 100%;
-    background: #000;
-    transition: 1s;
-
-}
-.preloader.complete:before{
-    left: -50%;
-}
-.preloader:after{
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background: #000;
-    transition: 1s;
-
-}
-preloader.complete:after{
-    right: -50%;
-}
-.project-detail{
-   color:black;
-    font-family: Microsoft JhengHei;
-    font-size: 23px; 
-    
+.responsive {
+    margin-top: 75px;
+    align-items: center;
     
 }
-.project-detail1{
-   color:white;
-    font-family: Microsoft JhengHei;
-    font-size: 16px; 
+.section-title{
+    font-family:Microsoft JhengHei;
+    color: #404040;
+    font-size: 40px;
+    font-weight: bold;
 }
-a.text-blue{
+.section-text{
+   font-family:Microsoft JhengHei;
+   color: #666666;
+   font-size: 18px; 
+}
+.ogvinfo-title{
+    font-family:Microsoft JhengHei;
+    color: #666666;
+    font-size: 40px;
+    font-style: oblique;
+    font-weight: bold;
+}
+.ogvinfo-text{
+   font-family:Microsoft JhengHei;
+   color: #666666;
+   font-size: 20px; 
+}
+.why-choose-text{
+    font-family:Microsoft JhengHei;
+    font-size: 12px;
+}
+.line-height-35{
+    line-height: 35px;
+}
+.line-height-40{
+    line-height: 40px;
+}
+.project{
+    background-color: white;
+}
+.pro-title{
+    font-size: 60px;
+    color: #333333;
+}
+.pro-text-nepal{
+    font-size: 45px;
+    color: #fff;
+    font-weight:bolder;
+    background-color: rgb(89, 89, 89,0.6);
+    width: 250px;
+    margin-left: 450px;
+    border-radius: 10px;
+}.pro-text-indoniesia{
+    font-size: 45px;
+    color: #fff;
+    font-weight:bolder;
+    background-color: rgb(89, 89, 89,0.6);
+    width: 200px;
+    margin-left: 450px;
+    border-radius: 10px;
+}.pro-text-columbia{
+    font-size: 45px;
+    color: #fff;
+    font-weight:bolder;
+    background-color: rgb(89, 89, 89,0.6);
+    width: 300px;
+    margin-left: 450px;
+    border-radius: 10px;
+}.pro-text-maxico{
+    font-size: 45px;
+    color: #fff;
+    font-weight:bolder;
+    background-color: rgb(89, 89, 89,0.6);
+    width: 250px;
+    margin-left: 450px;
+    border-radius: 10px;
+}
+.pro-img{
+    height: 480px;
+    overflow: hidden;
+    font-family:Microsoft JhengHei;
+    border-radius: 10px;
+}
+.section-grbacolor{
+    background-color:#e6e6e6
+}
+.section-whbacolor{
+    background-color:#ffff
+}
+.section-applybacolor{
+    background-color:#f2f3f6
+}
+.section-video{
+    padding: 0rem 
+}
+.section-count{
+    
+    height: 250px;
+    vertical-align: middle;
+        
+}
+.btn-sdg{
+    width: 700px;
+    border: 2px solid black;
+
+    background-color: white;
     color:#037ef3;
+    border-color: #037ef3;
+    padding: 5px;
+    font-size: 18px;
+    font-weight:700;
+    cursor: pointer;
+    border-radius:8px;
+    font-family:'Open Sans','Helvetica Neue',Arial,sans-serif,Microsoft JhengHei;
 }
-a.text-blue:hover{
-    color:#68b5fd;
+.btn-sdg:hover {
+    background: #037ef3;
+    color: white;
 }
-.text-blue{
-    color:#037ef3;
+.header-font{
+    font-family:Microsoft JhengHei;
+    color:#f2f2f2;
+    font-weight: 800;
 }
-.card-text1{
-    color:rgb(38, 38, 38,.8);
+.microfont{
     font-family: Microsoft JhengHei;
 }
-.card-text9{
-    color:rgb(140,140,140,.8);
-    font-family: Microsoft JhengHei;
-}
-
-h2.card-text2{
-    color:black;
-    font-family: Microsoft JhengHei;
-    font-size: 32px; 
-}
-h2.card-text3{
-    color:black;
-    font-family: Microsoft JhengHei;
-    font-size: 32px; 
-    margin-bottom: 20px;
-}
-
-.video-text{
-    margin: 10%;
-}
-
 /* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
+    font-family: Microsoft JhengHei;
   min-width: 200px;
     
     font-size: 14px;
     font-weight: 800;
 
 }
-
 /* Links inside the dropdown */
 .dropdown-content a {
   float: none;
@@ -559,62 +479,4 @@ p.contact-2{
     font-size:16px;
     margin: 10px;
 }
-.value{
-    color:#888888;
-    align-content: center;
-    margin:0px auto;
-    text-align: center;
-    text-decoration-style: none;
-    
-}
-.value:hover{
-    color:#037ef3;
-}
-h2.post-title1{
-    color:#037ef3;
-    text-decoration:none;
-    font-size: 30px;
-    font-family: Microsoft JhengHei;
-    margin-top: 5%;
-    font-weight: 800;
-}
-h2.post-title1:hover{
-    color:#888888;
-    text-decoration:none;
-}
-h3.post-subtitle1{
-    color:#444444;
-    margin-left: 0%;
-    margin-top: 10%;
-    font-size: 18px;
-    line-height: 24px;
-    letter-spacing: 0.5px;
-    font-family: Microsoft JhengHei;
-    
-}
 
-.news-photo{
-
-    padding: 6%;
-}
-.news-photo1{
-    margin-left: 15%;
-}
-
-hr.top-margin{
-    margin-top:17%;
-    margin-bottom: 5%
-}
-li.icon-left{
-    margin: 10px;
-    margin-left: 20px;
-    color:#037ef3;
-    font-family: Microsoft JhengHei;
-    font-weight: 600;
-    
-}
-.nav-font{
-    font-family: Microsoft JhengHei;
-    font-size: 20px;
-    font-weight:bold;
-}
