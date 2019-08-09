@@ -235,3 +235,14 @@ p.contact-2 {
     font-size: 16px;
     margin: 10px;
 }
+
+.btn-header{
+    margin-bottom: 10%; background-color: #f85a40;
+    color: white;
+}
+
+.btn-header:hover{
+    background-color: #fa8b79;
+    color: white;
+    
+}
