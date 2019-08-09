@@ -85,7 +85,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif,'微軟正黑體'
 }
 
 .bg-primary {
@@ -181,7 +181,7 @@ padding-top: 30px;
 #mainNav {
     border-bottom: 1px solid rgba(33, 37, 41, .1);
     background-color: #fff;
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif,'微軟正黑體';
     -webkit-transition: all .2s;
     transition: all .2s
 }
