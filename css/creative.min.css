@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    font-family: Merriweather, 'Helvetica Neue', Arial, sans-serif;
+    font-family: Merriweather, 'Helvetica Neue', Arial, sans-serif,'微軟正黑體';
     overflow-x: auto;
 
 }
@@ -580,6 +580,7 @@ a.text-blue:hover {
 .card-text1 {
     color: rgb(38, 38, 38, .8);
     font-family: Microsoft JhengHei;
+    margin: 5%;
 }
 
 .card-text9 {
@@ -734,4 +735,20 @@ li.icon-left {
     font-family: Microsoft JhengHei;
     font-size: 20px;
     font-weight: bold;
+}
+
+.margin_top{
+    margin-top: 0;
+}
+img.ogv{
+    height: 67%;
+    width: 50%;
+        margin: 0%;
+
+}
+
+img.ogte{
+    height: 50%;
+    width: 50%;
+    margin: 0%;
 }
