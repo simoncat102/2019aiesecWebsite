@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    font-family: Merriweather, 'Helvetica Neue', Arial, sans-serif,'微軟正黑體';
+    font-family: Merriweather, 'Helvetica Neue', Arial, sans-serif, '微軟正黑體';
     overflow-x: auto;
 
 }
@@ -85,7 +85,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif,'微軟正黑體'
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif, '微軟正黑體'
 }
 
 .bg-primary {
@@ -180,8 +180,8 @@ padding-top: 30px;
 
 #mainNav {
     border-bottom: 1px solid rgba(33, 37, 41, .1);
-    background-color: #fff;
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif,'微軟正黑體';
+    background-color: #037ef3;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif, '微軟正黑體';
     -webkit-transition: all .2s;
     transition: all .2s
 }
@@ -191,29 +191,28 @@ padding-top: 30px;
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, .7)
+    color: #e3e3e3;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
-    color: rgba(255, 255, 255, .7)
-}
+color: #e3e3e3;}
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
     color: rgba(38, 38, 38) !important;
-    background-color: transparent
+    background-color: transparent;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover {
-    background-color: transparent
+    background-color: 037ef3;
 }
 
 @media (min-width:992px) {
     #mainNav {
         border-color: transparent;
-        background-color: transparent
+        background-color: transparent;
     }
 
     #mainNav .navbar-brand {
@@ -231,7 +230,7 @@ padding-top: 30px;
 
     #mainNav .navbar-nav > li.nav-item > a.nav-link,
     #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
-        color: #fff
+        color: #fff;
     }
 
     #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover,
@@ -264,14 +263,6 @@ padding-top: 30px;
     }
 }
 
-.parallax {
-    background-image: url("../img/GV_returnee_1.JPG");
-    min-height: 700px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 header.masthead {
     padding-top: 10rem;
@@ -630,6 +621,7 @@ h2.card-text3 {
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
     background-color: #ddd;
+    z-index:3;
 }
 
 /* Show the dropdown menu on hover */
@@ -737,18 +729,51 @@ li.icon-left {
     font-weight: bold;
 }
 
-.margin_top{
+.margin_top {
     margin-top: 0;
 }
-img.ogv{
+
+img.ogv {
     height: 67%;
     width: 50%;
-        margin: 0%;
+    margin: 0%;
 
 }
 
-img.ogte{
+img.ogte {
     height: 50%;
     width: 50%;
     margin: 0%;
+}
+
+.stat-plus {
+    font-size: 30px;
+}
+
+.stat-title {
+    font-family: Microsoft JhengHei;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+@media screen and (max-width:480px) {
+    .stat-number {
+        font-family: sans-serif;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 650;
+        color: white;
+    }
+
+    .stat-plus {
+        font-size: 20px;
+    }
+
+    .stat-title {
+        font-family: Microsoft JhengHei;
+        font-size: 12px;
+        font-weight: bold;
+        color: white;
+    }
 }
