@@ -8,6 +8,16 @@ header.ogvhead {
     opacity: 0.9;
 }
 
+hr{
+    max-width:100%;
+    border-width:1px;
+    align-content: left;
+    border-color:rgb(240, 95, 64)
+
+}
+
+hr.light{
+    border-color:#fff
 }
 
 hr.gray {
@@ -265,13 +275,6 @@ p.fontsize {
     font-size: 20px;
 }
 
-.ogvvideo {
-    width: 472;
-    height: 310;
-    margin-left: 12%;
-    margin-bottom: 4%;
-}
-
 .video-container {
 
     position: relative;
@@ -329,12 +332,6 @@ p.fontsize {
         height: 5%;
     }
 
-    .ogvvideo {
-        width: 100%;
-        height: 50%;
-        align-items: center;
-        float: none;
-    }
 
     .ogvinfo-title {
         font-family: Microsoft JhengHei;
@@ -358,5 +355,3 @@ p.fontsize {
     }
 }
 
-
-}
