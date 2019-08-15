@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<!--    air table-->
+    <script src="node_modules/airtable/build/airtable.browser.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    
+    <!--    <script src="node_modules/airtable/build/airtable.browser.js"></script>-->
+</head>
+<!--keyLj47pnpJDykBhp-->
+
+
+<body>
+    <div id="head">
+        
+    </div>
+</body>
+<script>
+    var Airtable = require('airtable');
+    var base = new Airtable({
+        apiKey: 'keyLj47pnpJDykBhp'
+    }).base('appBGvyji7GBZ8nb5');
+
+    base('head').find('recn8gX4xqitGUCTP', function(err, record) {
+        if (err) {
+            console.error(err);
+            return;
+        }
+        console.log('Retrieved', record.data_info);
+        $('#head').append(
+            `<a>${record.fields.data_info}</a>`
+        );
+    });
+
+</script>
+
+</html>
