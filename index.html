@@ -93,14 +93,17 @@
         <div class="container my-auto">
             <div class="row" style="margin-top: 6%">
                 <div class="col-lg-12">
-                    <h1 align=center class="text-uppercase animated zoomIn header-font" style="animation-duration: 1s;animation-delay: 1s">
+                    <h1 align=center class="text-uppercase animated zoomIn header-font font-size" style="animation-duration: 1s;animation-delay: 1s">
                         <br><br>
-                        <strong>青年創造影響力的起點</strong>
+                        <strong id="title_head">
+<!--                        青年創造影響力的起點-->
+                        </strong>
                     </h1>
                     <br>
                 </div>
                 <div class="col-lg-12 animated fadeInDown" style="animation-duration: 1s; animation-delay: 1.5s;animation-delay: 1.5s">
-                    <p align="center" style="font-size: 20px; line-height: 40px">我們相信一個人微小的行動能夠影響一件事情，<br>而一群人就能夠改變台灣、改變世界。
+                    <p align="center" class="font-size" id="head_info">
+                       我們相信一個人微小的行動能夠影響一件事情，<br>而一群人就能夠改變台灣、改變世界。
                         <br><br>
                     </p>
                 </div>
@@ -307,10 +310,7 @@
             </div>
         </div>
     </section>
-    <!--
-        <div class="parallax">
-        </div>
--->
+
     <!-- 最新消息 -->
     <div style="background-color: #f2f2f2">
         <br><br><br>
@@ -321,38 +321,7 @@
         <br>
         <div class="row align-items-center no-gutters mb-4 mb-lg-5">
 
-            <!--消息1-->
 
-            <!--
-            <div class="col-lg-5 col-md-8 news-photo1 ">
-                <div class="post-preview wow fadeIn" data-wow-delay="0.5s">
-                    <a href="https://aiesec.org/opportunity/987682" target="_blank">
-
-                        <h2 class="post-title1" herf="https://aiesec.org/opportunity/985028">
-                            Language School Project /
-                        </h2>
-                    </a>
-                    <li class="icon-left"> Butwal, Nepal</li>
-
-
-                    <h3 class="post-subtitle1">
-                        趕在年底前去一趟尼泊爾，探索自己的旅程吧！
-                        在專案中，研習生將在<br>學校教導當地孩童何為「聯合國永續發展目標」，讓孩童意識到「永續發展目標」的重要性並採取行動幫助尼泊爾在2030前達成消除貧窮、氣候行動。
-                    </h3>
-                    <p class="post-meta">Posted by
-                        <a href="#">AIESEC in NCCU</a>
-                        on September 24, 2018</p>
-                    <hr class="d-none d-lg-block mb-0 ml-0 light top-margin">
-                </div>
-            </div>
-            <div class="col-lg-4 wow fadeInRightBig" data-wow-delay="0.6s">
-                            <img src="img/DSCF6039.JPG" height="80%" width="80%" class="news-photo">
-
-            </div>
--->
-            <!--消息1 結束-->
-
-            <!--消息2-->
 
 
             <div class="col-lg-5 col-md-8 news-photo1 ">
@@ -530,6 +499,13 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    
+    <!--    air table-->
+    <script src="node_modules/airtable/build/airtable.browser.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    
+    <!--    
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
@@ -538,6 +514,27 @@
         new WOW().init();
 
     </script>
+    <script>
+    var Airtable = require('airtable');
+    var base = new Airtable({
+        apiKey: 'keyLj47pnpJDykBhp'
+    }).base('appBGvyji7GBZ8nb5');
+
+    base('head').find('recn8gX4xqitGUCTP', function(err, record) {
+        if (err) {
+            console.error(err);
+            return;
+        }
+        console.log('Retrieved', record);
+        $('#title_head').append(
+            `<a>${record.fields.data_title}</a>`
+        );
+         $('#info_head').append(
+            `<a>${record.fields.data_info}</a>`
+        );
+    });
+
+</script>
 </body>
 
 </html>
