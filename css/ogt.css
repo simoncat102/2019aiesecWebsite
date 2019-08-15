@@ -40,76 +40,13 @@ section{
     margin-top:0;
 }
 
-
-#mainNav{
-    border-bottom:1px solid rgba(33,37,41,.1);
-    background-color:#fff;
-    font-family:'Open Sans','Helvetica Neue',Arial,sans-serif;
-    -webkit-transition:all .2s;
-    transition:all .2s
-}
-#mainNav .navbar-nav>li.nav-item>a.nav-link,#mainNav .navbar-nav>li.nav-item>a.nav-link:focus{
-    font-size:16px;
-    font-weight:700;
-    text-transform:uppercase;
-    color:rgba(255,255,255,.7)
-}
-#mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover,#mainNav .navbar-nav>li.nav-item>a.nav-link:hover
-{
-    color:rgba(255,255,255,.7)
-}
-#mainNav .navbar-nav>li.nav-item>a.nav-link.active,#mainNav .navbar-nav>li.nav-item>a.nav-link:focus.active{
-    color:rgba(38, 38, 38)!important;
-    background-color:transparent
-}
-#mainNav .navbar-nav>li.nav-item>a.nav-link.active:hover,#mainNav .navbar-nav>li.nav-item>a.nav-link:focus.active:hover{
-    background-color:transparent
-}
-@media (min-width:992px){
-    #mainNav
-    {
-        border-color:transparent;
-        background-color:transparent
-    }
-    #mainNav .navbar-brand{
-        color:rgba(255,255,255,.8)
-    }
-    #mainNav .navbar-brand:focus,#mainNav .navbar-brand:hover{
-        color:color:rgba(255,255,255,.8)
-    }
-    #mainNav .navbar-nav>li.nav-item>a.nav-link{
-        padding:.5rem 1rem
-    }
-    #mainNav .navbar-nav>li.nav-item>a.nav-link,#mainNav .navbar-nav>li.nav-item>a.nav-link:focus{
-        color:#fff
-    }
-    #mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover,#mainNav .navbar-nav>li.nav-item>a.nav-link:hover{
-        color:#fff
-    }
-    #mainNav.navbar-shrink{
-        border-bottom:1px solid rgba(33,37,41,.1);
-        background-color:#037ef3
-    }
-    #mainNav.navbar-shrink .navbar-brand{
-        color:rgba(255,255,255,.7)
-    }
-    #mainNav.navbar-shrink .navbar-brand:focus,#mainNav.navbar-shrink .navbar-brand:hover{
-        color:#fff
-    }
-    #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link,#mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:focus{
-        color:rgba(255,255,255,.8)
-    }
-    #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:focus:hover,#mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:hover{
-        color:#262626
-    }
-}
-header.masthead{
-    padding-top:10rem;
-    padding-bottom:calc(10rem - 56px);
-    background-image:url(../img/GV_header_2.jpg);
+header.ogtlanding{
+    padding-top:0rem;
+    padding-bottom:calc(7rem - 56px);
+    background-image:url(../img/gt_default.png);
     background-attachment:fixed;
     background-position:center center;
-    background-size:cover
+    background-size:cover;
 }
 header.masthead hr{
     margin-top:30px;
@@ -175,7 +112,7 @@ header.masthead p{
     box-shadow:0 0 0 .2rem rgba(2, 79, 151,.7)!important
 }
 .stat-wrap{
-   background: #f85a40;
+   background: #0A8Ea0;
    -webkit-display: flex;
    -moz-display: flex;
    -ms-display: flex;
@@ -263,6 +200,9 @@ header.masthead p{
 .microfont{
     font-family: Microsoft JhengHei;
 }
+p.fontsize {
+    font-size: 20px;
+}
 /* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
@@ -293,4 +233,90 @@ header.masthead p{
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+  .video-container {
+
+    position: relative;
+
+    padding-bottom: 56.25%;
+
+    padding-top: 30px;
+
+    height: 0;
+
+    overflow: hidden;
+    margin: 10%;
+
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+}
+
+@media screen and (max-width:480px) {
+    
+    header {
+        margin: auto;
+    }
+    header.ogtlanding {
+        padding-top: 10rem;
+        padding-bottom: calc(10rem - 56px);
+        background-image: url(../img/gt_default.png);
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+        opacity: 0.9;
+        height: 100%;
+        width: 100%;
+
+    }
+    .header-font {
+        font-size: 10px;
+    }
+
+    h1.fontsize {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    p.fontsize {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .btn {
+        height: 5%;
+    }
+
+    .ogvinfo-title {
+        font-family: Microsoft JhengHei;
+        color: #666666;
+        font-size: 20px;
+        font-style: oblique;
+        font-weight: bold;
+        margin: 5%;
+        margin-bottom: 0;
+        margin-left: 10%;
+    }
+
+    .ogvinfo-text {
+        font-family: Microsoft JhengHei;
+        color: #666666;
+        font-size: 14px;
+        margin: 5%;
+        margin-top: 0;
+        margin-left: 10%;
+
+    }
 }
