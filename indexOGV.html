@@ -40,10 +40,11 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
     <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
-    
-<!-- airtable -->
-    <script src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
+
+    <!--    air table-->
     <script src="node_modules/airtable/build/airtable.browser.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
 
 </head>
@@ -89,47 +90,25 @@
     </nav>
 
 
-    <!--
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto my-2 my-lg-0">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
--->
 
     <header class="ogvhead text-center text-white d-flex">
         <div class="container my-auto">
             <div class="row" style="margin-top:10%">
                 <div class="col-lg-12">
                     <h1 align=center class="text-uppercase animated zoomIn header-font fontsize" style="animation-duration: 1s;animation-delay: 1s">
-                        <strong>成為你想看見的改變</strong>
+                        <strong id="title-ogv">
+<!--                        成為你想看見的改變-->
+                        </strong>
                     </h1>
                     <br>
                 </div>
                 <div class="col-lg-12 animated fadeInDown" style="animation-duration: 1s; animation-delay: 1.5s;animation-delay: 1.5s">
 
-                    <p align=center class="fontsize">即便再微小的行動，都能在他人的心中種下改變的種子<br><br>而我們都能成為影響力的散播者
+                    <p align=center class="fontsize" id="info-ogv">
+<!--                       即便再微小的行動，都能在他人的心中種下改變的種子<br><br>而我們都能成為影響力的散播者-->
+                       </p>
                         <br><br><br>
-                        <a align=left class="btn btn-xl btn-header js-scroll-trigger" href="#video">瀏覽精選志工專案</a></p>
+                        <a align=left class="btn btn-xl btn-header js-scroll-trigger" href="#video">瀏覽精選志工專案</a>
                 </div>
             </div>
 
@@ -190,7 +169,7 @@
                     <font class="stat-plus">+</font>
                 </div>
                 <a class="stat-title">提供海外成長專以來
-                <br>所有達成的人數</a>
+                    <br>所有達成的人數</a>
             </div>
             <div>
             </div>
@@ -325,111 +304,133 @@
             <img src="img1/process2.png" width="60%" height="60%" style="margin-top: 4rem">
 
         </div>
-        <br><br><br><br><br>
+    </div>
+    <br><br><br><br><br>
 
-        <section id="faq" class=" section-grbacolor">
+    <section id="faq" class=" section-grbacolor">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p class="section-heading wow fadeInDown section-title">常見問與答</p>
+                    <br><br>
+                </div>
+                <iframe src="indexFAQ.html" width="100%" height="450px" frameborder="0" scrolling="yes"></iframe>
+            </div>
+        </div>
+
+    </section>
+    <section id=apply class="section-applybacolor">
+        <div class="section-applybacolor">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <p class="section-heading wow fadeInDown section-title">常見問與答</p>
-                        <br><br>
-                    </div>
-                    <iframe src="indexFAQ.html" width="100%" height="450px" frameborder="0" scrolling="yes"></iframe>
+                <div class="col-lg-12 text-center">
+                    <p class="section-heading wow fadeInDown section-title">報名開始您的旅程</p>
                 </div>
-            </div>
-        </section>
-        <section id=apply class="section-applybacolor">
-            <div class="section-applybacolor">
-                <div class="container">
-                    <div class="col-lg-12 text-center">
-                        <p class="section-heading wow fadeInDown section-title">報名開始您的旅程</p>
-                    </div>
-                    <iframe src="twogv.html" width="100%" height="727px" frameborder="0" scrolling="yes"></iframe>
-                </div>
-            </div>
-        </section>
-        <!-- The content of your page would go here. -->
-
-        <footer class="footer-distributed" id=contact>
-
-            <div class="footer-left">
-
-                <img src="img/aiesec%20logo.png" height="30%" width="30%">
-
-                <p class="footer-links microfont">
-                    <a href="index.html">首頁</a>
-                    ·
-                    <a href="#">AIESEC</a>
-                    ·
-                    <a href="#services">專案說明</a>
-                    ·
-                    <a href="indexOGV.html">海外成長</a>
-                    ·
-                    <a href="#">海外實習</a>
-                    ·
-                    <a href="indexOGE.html">海外青創</a>
-                </p>
-
-                <p class="footer-company-name">AIESEC in Taiwan&copy; 2018</p>
+                <iframe src="twogv.html" width="100%" height="727px" frameborder="0" scrolling="yes"></iframe>
             </div>
 
-            <div class="footer-center microfont">
+        </div>
+    </section>
+    <!-- The content of your page would go here. -->
 
-                <div>
-                    <i class="fa fa-map-marker microfont"></i>
-                    <p>新北市板橋區莒光路52號之一</p>
-                </div>
+    <footer class="footer-distributed" id=contact>
 
-                <div>
-                    <i class="fa fa-phone"></i>
-                    <p>02-2256 2380</p>
-                </div>
+        <div class="footer-left">
 
-                <div>
-                    <i class="fa fa-envelope"></i>
-                    <p><a href="mailto:support@company.com">taiwan@aiesec.net</a></p>
-                </div>
+            <img src="img/aiesec%20logo.png" height="30%" width="30%">
 
+            <p class="footer-links microfont">
+                <a href="index.html">首頁</a>
+                ·
+                <a href="#">AIESEC</a>
+                ·
+                <a href="#services">專案說明</a>
+                ·
+                <a href="indexOGV.html">海外成長</a>
+                ·
+                <a href="#">海外實習</a>
+                ·
+                <a href="indexOGE.html">海外青創</a>
+            </p>
+
+            <p class="footer-company-name">AIESEC in Taiwan&copy; 2018</p>
+        </div>
+
+        <div class="footer-center microfont">
+
+            <div>
+                <i class="fa fa-map-marker microfont"></i>
+                <p>新北市板橋區莒光路52號之一</p>
             </div>
 
-            <div class="footer-right">
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>02-2256 2380</p>
+            </div>
 
-                <p class="footer-company-about">
-                    <span>About AIESEC</span>
-                    AIESEC is a non-governmental not-for-profit organisation in consultative status with the United Nations Economic and Social Council (ECOSOC).
-                </p>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">taiwan@aiesec.net</a></p>
+            </div>
 
-                <div class="footer-icons">
+        </div>
 
-                    <a href="https://www.facebook.com/AIESECTW/"><i class="fa fa-facebook"></i></a>
-                    <a href="https://twitter.com/aiesec"><i class="fa fa-twitter"></i></a>
-                    <a href="https://instagram.com/aiesectaiwan?utm_source=ig_profile_share&igshid=1l6n1bqjyf3ne"><i class="fa fa-instagram"></i></a>
+        <div class="footer-right">
 
+            <p class="footer-company-about">
+                <span>About AIESEC</span>
+                AIESEC is a non-governmental not-for-profit organisation in consultative status with the United Nations Economic and Social Council (ECOSOC).
+            </p>
 
-                </div>
+            <div class="footer-icons">
+
+                <a href="https://www.facebook.com/AIESECTW/"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/aiesec"><i class="fa fa-twitter"></i></a>
+                <a href="https://instagram.com/aiesectaiwan?utm_source=ig_profile_share&igshid=1l6n1bqjyf3ne"><i class="fa fa-instagram"></i></a>
+
 
             </div>
 
-        </footer>
+        </div>
 
+    </footer>
 
-        <!-- Bootstrap core JavaScript -->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-        <!-- Plugin JavaScript -->
-        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-        <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-        <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
-        <!-- Custom scripts for this template -->
-        <script src="js/creative.min.js"></script>
-        <script src="js/wow.min.js"></script>
-        <script>
-            new WOW().init();
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
 
-        </script>
+    </script>
+    <script>
+        var Airtable = require('airtable');
+        var base = new Airtable({
+            apiKey: 'keyLj47pnpJDykBhp'
+        }).base('appBGvyji7GBZ8nb5');
 
+        base('OGV').find('recpWa74MJRwP9whl', function(err, record) {
+            if (err) {
+                console.error(err);
+                return;
+            }
+            console.log('Retrieved', record.id);
+            $('#title-ogv').append(
+                `<a>${record.fields.ogv_data_title}</a>`
+            );
+            $('#info-ogv').append(
+                `<a>${record.fields.ogv_data_info}</a>`
+            );
+        });
+
+    </script>
 
 </body>
 
