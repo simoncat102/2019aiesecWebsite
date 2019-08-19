@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
     <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
-<!--    air table-->
+    <!--    air table-->
     <script src="node_modules/airtable/build/airtable.browser.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
@@ -54,6 +54,7 @@
             </button>
             <div class="collapse navbar-collapse nav-font" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
+<!--
                     <li class="nav-item dropdown">
                         <a class="nav-link js-scroll-trigger">
                             青年參與計畫<i class="fa fa-caret-down"></i></a>
@@ -72,7 +73,34 @@
                             <a href="#">企業合作</a>
                         </div>
                     </li>
-     
+-->
+
+                    <li class="collapse-trigger">
+                        <a class="collapse-trigger" data-toggle="collapse" href="#colaboration1" role="button" aria-expanded="false" aria-controls="colaboration">
+                            青年參與計畫 <i class="fa fa-caret-down"></i>&nbsp;&nbsp;&nbsp;</a>
+                    </li>
+
+                    <div class="collapse" id="colaboration1">
+                        <div class="collaspe-body">
+                            <a href="indexOGV.html" class="collapse-font"> Global Volunteer 海外成長</a><br>
+                            <a href="indexOGT.html" class="collapse-font"> Global Talent 海外實習</a><br>
+                            <a href="indexOGE.html" class="collapse-font"> Global Entrepreneur 海外青創</a>
+
+                        </div>
+                    </div>
+
+                    <li class="collapse-trigger">
+                        <a class="collapse-trigger" data-toggle="collapse" href="#colaboration" role="button" aria-expanded="false" aria-controls="colaboration">
+                            組織合作機會 <i class="fa fa-caret-down"></i></a>
+                    </li>
+
+                    <div class="collapse" id="colaboration">
+                        <div class="collaspe-body">
+                            <a href="#" class="collapse-font">NGO 合作</a><br>
+                            <a href="#" class="collapse-font">企業合作</a>
+                        </div>
+                    </div>
+
                     <li class="nav-item dropdown">
                         <a class="nav-link js-scroll-trigger" href="https://aiesec.org/search" target="_blank">尋找適合專案</a>
                     </li>
@@ -87,14 +115,14 @@
                     <h1 align=center class="text-uppercase animated zoomIn header-font font-size" style="animation-duration: 1s;animation-delay: 1s">
                         <br><br>
                         <strong id="title_head">
-<!--                                                    青年創造影響力的起點-->
+                            <!--                                                    青年創造影響力的起點-->
                         </strong>
                     </h1>
                     <br>
                 </div>
                 <div class="col-lg-12 animated fadeInDown" style="animation-duration: 1s; animation-delay: 1.5s;animation-delay: 1.5s">
                     <p align="center" class="font-size" id="info_head">
-<!--                        我們相信一個人微小的行動能夠影響一件事情，<br>而一群人就能夠改變台灣、改變世界。-->
+                        <!--                        我們相信一個人微小的行動能夠影響一件事情，<br>而一群人就能夠改變台灣、改變世界。-->
                         <br><br>
                     </p>
                 </div>
@@ -487,7 +515,7 @@
         new WOW().init();
 
     </script>
-        <script>
+    <script>
         var Airtable = require('airtable');
         var base = new Airtable({
             apiKey: 'keyLj47pnpJDykBhp'
