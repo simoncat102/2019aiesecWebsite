@@ -465,7 +465,7 @@ sideshow-size {
 }
 
 .stat-wrap {
-    background: #037ef3;
+/*    background: #037ef3;*/
     -webkit-display: flex;
     -moz-display: flex;
     -ms-display: flex;

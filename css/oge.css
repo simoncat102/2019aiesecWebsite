@@ -44,8 +44,8 @@ section{
 
 header.ogelanding{
     padding-top:10rem;
-    padding-bottom:calc(10rem - 56px);
-    background-image:url(../img1/ogeheader.jpg);
+    padding-bottom:calc(7rem - 56px);
+    background-image:url(../img/ogeheader.jpg);
     background-attachment:fixed;
     background-position:center center;
     background-size:cover
@@ -279,6 +279,9 @@ p.contact-2{
     font-size:16px;
     margin: 10px;
 }
+p.fontsize {
+    font-size: 20px;
+}
 
   .video-container {
 
@@ -313,10 +316,10 @@ p.contact-2{
     header {
         margin: auto;
     }
-    header.ogtlanding {
+    header.ogelanding {
         padding-top: 10rem;
         padding-bottom: calc(10rem - 56px);
-        background-image: url(../img/gt_default.png);
+        background-image: url(../img/ogeheader.jpg);
         background-position: center center;
         background-size: cover;
         background-attachment: fixed;
@@ -346,7 +349,7 @@ p.contact-2{
     .ogvinfo-title {
         font-family: Microsoft JhengHei;
         color: #666666;
-        font-size: 20px;
+        font-size: 16px;
         font-style: oblique;
         font-weight: bold;
         margin: 5%;

@@ -162,7 +162,8 @@ a:hover {
 }
 
 .section-count {
-    padding: 1rem 0
+    padding: 1rem 0;
+    background-color: #F85A40;
 }
 
 .btn-sdg {
