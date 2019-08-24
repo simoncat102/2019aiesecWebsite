@@ -189,7 +189,8 @@ header.masthead p{
     padding: 0rem 
 }
 .section-count{
-    padding: 1rem 0 
+    padding: 1rem 0;
+    background-color: #0A8EA0;
 }
 
 .header-font{
@@ -313,7 +314,7 @@ p.fontsize {
     .ogvinfo-text {
         font-family: Microsoft JhengHei;
         color: #666666;
-        font-size: 14px;
+        font-size: 16px;
         margin: 5%;
         margin-top: 0;
         margin-left: 10%;
