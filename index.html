@@ -94,14 +94,14 @@
                     <h1 align=center class="text-uppercase animated zoomIn header-font font-size" style="animation-duration: 1s;animation-delay: 1s">
                         <br><br>
                         <strong id="title_head">
-<!--                            青年創造影響力的起點 -->
-                            </strong>
+                            <!--                            青年創造影響力的起點 -->
+                        </strong>
                     </h1>
                     <br>
                 </div>
                 <div class="col-lg-12 animated fadeInDown" style="animation-duration: 1s; animation-delay: 1.5s;animation-delay: 1.5s">
                     <p align="center" class="font-size" id="info_head">
-<!--                        我們相信一個人微小的行動能夠影響一件事情，<br>而一群人就能夠改變台灣、改變世界。-->
+                        <!--                        我們相信一個人微小的行動能夠影響一件事情，<br>而一群人就能夠改變台灣、改變世界。-->
                         <br><br>
                     </p>
                 </div>
@@ -496,9 +496,11 @@
     </script>
     <script>
         var Airtable = require('airtable');
-        var base = new Airtable({
+        Airtable.configure({
+            endpointUrl: 'https://api.airtable.com',
             apiKey: 'keyLj47pnpJDykBhp'
-        }).base('appBGvyji7GBZ8nb5');
+        });
+        var base = Airtable.base('appBGvyji7GBZ8nb5');
 
         base('head').find('recn8gX4xqitGUCTP', function(err, record) {
             if (err) {
@@ -513,8 +515,8 @@
                 `<a>${record.fields.data_info}</a>`
             );
         });
-        
-        var TEST ='123';
+
+        var TEST = '123';
 
     </script>
 </body>
