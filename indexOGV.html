@@ -10,6 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
 
     <!--    rwd-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -54,32 +56,40 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
-
-            <a class="navbar-brand js-scroll-trigger" href="index.html">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <img src="img/logo_290x60.png" width="60%" height="60%">
             </a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse microfont" id="navbarResponsive" style="font-weight:bold">
+            <div class="collapse navbar-collapse nav-font" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link js-scroll-trigger">
-                            青年參與計畫<i class="fa fa-caret-down"></i></a>
-                        <div class="dropdown-content" style="width: 250px">
-                            <a href="indexOGV.html"> Global Volunteer 海外成長</a>
-                            <a href="indexOGT.html"> Global Talent 海外實習</a>
-                            <a href="indexOGE.html"> Global Entrepreneur 海外青創</a>
-                        </div>
+
+                    <li class="collapse-trigger">
+                        <a class="collapse-trigger" data-toggle="collapse" href="#colaboration1" role="button" aria-expanded="false" aria-controls="colaboration">
+                            青年參與計畫 <i class="fa fa-caret-down"></i>&nbsp;&nbsp;&nbsp;</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link js-scroll-trigger">
-                            組織合作機會<i class="fa fa-caret-down"></i></a>
-                        <div class="dropdown-content">
-                            <a href="#">NGO 合作</a>
-                            <a href="#">企業合作</a>
+
+                    <div class="collapse" id="colaboration1">
+                        <div class="collaspe-body">
+                            <a href="indexOGV.html" class="collapse-font"> Global Volunteer 海外成長</a><br>
+                            <a href="indexOGT.html" class="collapse-font"> Global Talent 海外實習</a><br>
+                            <a href="indexOGE.html" class="collapse-font"> Global Entrepreneur 海外青創</a>
+
                         </div>
+                    </div>
+
+                    <li class="collapse-trigger">
+                        <a class="collapse-trigger" data-toggle="collapse" href="#colaboration" role="button" aria-expanded="false" aria-controls="colaboration">
+                            組織合作機會 <i class="fa fa-caret-down"></i></a>
                     </li>
+
+                    <div class="collapse" id="colaboration">
+                        <div class="collaspe-body">
+                            <a href="#" class="collapse-font">NGO 合作</a><br>
+                            <a href="#" class="collapse-font">企業合作</a>
+                        </div>
+                    </div>
 
                     <li class="nav-item dropdown">
                         <a class="nav-link js-scroll-trigger" href="https://aiesec.org/search" target="_blank">尋找適合專案</a>
@@ -90,14 +100,13 @@
     </nav>
 
 
-
     <header class="ogvhead text-center text-white d-flex">
         <div class="container my-auto">
             <div class="row" style="margin-top:10%">
                 <div class="col-lg-12">
                     <h1 align=center class="text-uppercase animated zoomIn header-font fontsize" style="animation-duration: 1s;animation-delay: 1s">
                         <strong id="title-ogv">
-                            成為你想看見的改變
+                            <!--                            成為你想看見的改變-->
                         </strong>
                     </h1>
                     <br>
@@ -105,7 +114,7 @@
                 <div class="col-lg-12 animated fadeInDown" style="animation-duration: 1s; animation-delay: 1.5s;animation-delay: 1.5s">
 
                     <p align=center class="fontsize" id="info-ogv">
-                        即便再微小的行動，都能在他人的心中種下改變的種子<br><br>而我們都能成為影響力的散播者
+                        <!--                        即便再微小的行動，都能在他人的心中種下改變的種子<br><br>而我們都能成為影響力的散播者-->
                     </p>
 
                     <a align=left class="btn btn-xl btn-header js-scroll-trigger" href="#video">瀏覽精選志工專案</a>
@@ -404,13 +413,13 @@
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/creative.min.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/creative.min.js"></script>
+
     <script>
         new WOW().init();
 
     </script>
-<!--
     <script>
         var Airtable = require('airtable');
         var base = new Airtable({
@@ -432,7 +441,6 @@
         });
 
     </script>
--->
 
 </body>
 
