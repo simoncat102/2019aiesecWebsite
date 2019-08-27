@@ -47,6 +47,7 @@ header.ogtlanding{
     background-attachment:fixed;
     background-position:center center;
     background-size:cover;
+    height: 100%;
 }
 header.masthead hr{
     margin-top:30px;
@@ -265,6 +266,10 @@ p.fontsize {
     height: 100%;
 }
 
+.bounce-margin{
+    margin-top: 100%;
+}
+
 @media screen and (max-width:480px) {
     
     header {
@@ -289,11 +294,13 @@ p.fontsize {
     h1.fontsize {
         font-size: 36px;
         text-align: center;
+      
     }
 
     p.fontsize {
         font-size: 13px;
         text-align: center;
+       
     }
 
     .btn {
