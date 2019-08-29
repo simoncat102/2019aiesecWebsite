@@ -268,7 +268,7 @@ padding-top: 30px;
 header.masthead {
     padding-top: 10rem;
     padding-bottom: calc(10rem - 56px);
-    background-image: url(../img/landing_page_header.jpg);
+    background-image: url(../img/webp/landing_page_header.webp);
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
