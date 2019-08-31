@@ -9,16 +9,15 @@ header.ogvhead {
     height: 100%;
 }
 
-hr{
-    max-width:100%;
-    border-width:1px;
+hr {
+    max-width: 100%;
+    border-width: 1px;
     align-content: left;
-    border-color:rgb(240, 95, 64)
-
+    border-color: rgb(240, 95, 64)
 }
 
-hr.light{
-    border-color:#fff
+hr.light {
+    border-color: #fff
 }
 
 hr.gray {
@@ -66,14 +65,14 @@ a:hover {
     font-size: 40px;
     font-style: oblique;
     font-weight: bold;
-     margin-left: 10%;
+    margin-left: 10%;
 }
 
 .ogvinfo-text {
     font-family: Microsoft JhengHei;
     color: #666666;
     font-size: 20px;
-     margin-left: 10%;
+    margin-left: 10%;
 }
 
 .why-choose-text {
@@ -263,7 +262,6 @@ p.contact-2 {
 }
 
 .btn-header {
-    margin-bottom: 10%;
     background-color: #f85a40;
     color: white;
 }
@@ -309,6 +307,8 @@ p.fontsize {
 
 @media screen and (max-width:480px) {
 
+    .header-bottom {}
+
     header.ogvhead {
         padding-top: 10rem;
         padding-bottom: calc(10rem - 56px);
@@ -323,7 +323,7 @@ p.fontsize {
     }
 
     h1.fontsize {
-        font-size: 36px;
+        font-size: 28px;
     }
 
     p.fontsize {
@@ -355,5 +355,8 @@ p.fontsize {
         margin-left: 10%;
 
     }
-}
 
+    .btn-mobile {
+        display: none;
+    }
+}
