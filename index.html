@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    
+
     <title>AIESEC in Taiwan</title>
 
     <!-- Bootstrap core CSS -->
@@ -46,12 +46,14 @@
 <body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <img src="img/logo_290x60.png" width="60%" height="60%">
-            </a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="navbar-brand js-scroll-trigger" href="index.html">
+                <div style="width: 150px">
+                    <img src="img/logo_290x60.png" class="nav-logo">
+                </div>
+            </div>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="float: right">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse nav-font" id="navbarResponsive">
@@ -124,30 +126,33 @@
 
     <!--    計數器   -->
 
-    <section id="counter" class="margin_top">
+    <div id="counter">
         <div class="count-font section-count">
-            <div class="stat-wrap wow fadeIn" style="margin-bottom: 0px">
+            <div class="stat-wrap wow fadeIn">
                 <div></div>
                 <div align=center>
                     <div class="inline-flag">
                         <span class="stat-number mainNav">16</span>
+                        <l class="stat-plus"> </l>
                     </div>
-                    <a class="stat-title">營運中的校園據點</a>
+                    <a class="stat-title">校園據點</a>
                 </div>
                 <div align=center>
                     <div class="inline-flag">
                         <span class="stat-number">120</span>
-                        <font class="stat-plus">+</font>
+                        <l class="stat-plus"> +</l>
+
                     </div>
-                    <a class="stat-title">遍及國家及地區數量</a>
+                    <a class="stat-title">國家及地區</a>
                 </div>
                 <div align=center>
 
                     <div class="inline-flag">
                         <span class="stat-number">842</span>
-                        <font class="stat-plus">+</font>
+                        <l class="stat-plus"> +</l>
+
                     </div>
-                    <a class="stat-title">2017年至今參與 <br>AIESEC 計畫的台灣青年</a><br>
+                    <a class="stat-title">參與計畫的台灣青年</a>
                     <!--         <a>所有達成的人數</a>     -->
                 </div>
                 <div>
@@ -155,7 +160,7 @@
             </div>
 
         </div>
-    </section>
+    </div>
 
     <!--    影片-->
     <section id="about" class="projects-section bg-light">
@@ -175,7 +180,7 @@
                         <div class="text-black-50 mb-0 video-text project-detail wow fadeInRightBig" data-wow-offset="100" data-wow-delay="0.3s">
 
                             <br>
-                            <p class="project-detail" align=center>“世界還不夠好，而我們想成為改變的開始”</p>
+                            <p class="project-detail" align=center>“世界還不夠好，<br>而我們想成為改變的開始”</p>
                         </div>
 
 
@@ -194,7 +199,7 @@
             <div class="row">
 
                 <div class="col-lg-4 col-sm-6 portfolio-item wow zoomIn">
-                    <div class="card h-100">
+                    <div class="card h-100 card-margin mt-5">
                         <a href="indexOGV.html"><img class="card-img-top" src="img/webp/students-gv.webp" alt=""></a>
                         <div class="card-body">
                             <h4 class="card-title">
@@ -214,7 +219,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6 portfolio-item wow zoomIn">
-                    <div class="card h-100">
+                    <div class="card h-100 card-margin mt-5">
                         <a href="#"><img class="card-img-top" src="img/webp/students-gt.webp" alt=""></a>
                         <div class="card-body">
                             <h4 class="card-title">
@@ -233,8 +238,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6 portfolio-item wow zoomIn">
-                    <div class="card h-100">
+                <div class="col-lg-4 col-sm-6  wow zoomIn">
+                    <div class="card h-100 card-margin mt-5">
                         <a href="indexOGE.html"><img class="card-img-top" src="img/webp/students-ge.webp" alt=""></a>
                         <div class="card-body">
                             <h4 class="card-title">
@@ -306,7 +311,7 @@
         </div>
     </section>
     <!-- 最新消息 -->
-    <div style="background-color: #f2f2f2">
+    <div class="container-news">
         <br><br><br>
         <div class="wow fadeInDownBig">
             <h2 class="card-text3" align="center">
@@ -338,6 +343,7 @@
                     <hr class="d-none d-lg-block mb-0 ml-0 light top-margin">
                 </div>
             </div>
+
             <div class="col-lg-4 wow fadeInRightBig" data-wow-delay="0.6s">
                 <img src="img/Hradec%20Kr%C3%A1lov%C3%A9,%20Czechia.jpg" height="80%" width="80%" class="news-photo">
 
@@ -423,7 +429,7 @@
 
         <div class="footer-left">
 
-            <img src="img/aiesec%20logo.png" height="30%" width="30%">
+            <img src="img/aiesec%20logo.png" class="footer-logo">
 
             <p class="footer-links nav-font">
                 <a href="#">首頁</a>
