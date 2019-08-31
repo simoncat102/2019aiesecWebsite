@@ -46,12 +46,12 @@
 <body id="page-top">
 
     <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
             <div class="navbar-brand js-scroll-trigger" href="index.html">
                 <div style="width: 150px">
-                   <a href="index.html">
-                    <img src="img/logo_290x60.png" class="nav-logo">
+                    <a href="index.html">
+                        <img src="img/logo_290x60.png" class="nav-logo">
                     </a>
                 </div>
             </div>
@@ -68,7 +68,7 @@
 
                     <div class="collapse" id="colaboration1">
                         <div class="collaspe-body">
-                            <a href="OutGoing%20Volunnter.html"S class="collapse-font"> Global Volunteer 海外成長</a><br>
+                            <a href="OutGoing%20Volunnter.html" S class="collapse-font"> Global Volunteer 海外成長</a><br>
                             <a href="Outgoing%20Talent.html" class="collapse-font"> Global Talent 海外實習</a><br>
                             <a href="Outgoing%20Entrepreneur.html" class="collapse-font"> Global Entrepreneur 海外青創</a>
 
@@ -205,7 +205,7 @@
                         <a href="indexOGV.html"><img class="card-img-top" src="img/webp/students-gv.webp" alt=""></a>
                         <div class="card-body">
                             <h4 class="card-title">
-                                <a href="OutGoing%20Volunnter.html"><img src="img/Global_Volunteer.png" width="50%" height="50%"></a>
+                                <a href="indexOGV.html"><img src="img/Global_Volunteer.png" width="50%" height="50%"></a>
                             </h4>
                             <h5 class="card-text1" align=center><br>和來自各地的志工一起發揮影響力，完成與聯合國發展目標結合的專案</h5>
                             <br>
@@ -529,6 +529,15 @@
         });
 
         var TEST = '123';
+
+    </script>
+    <script>
+        jQuery.get("https://auth.aiesec.org.tw/?entry=campaignInfos&type=glp", function(data) {
+
+            console.log(data);
+            
+            var data;
+        });
 
     </script>
 </body>
