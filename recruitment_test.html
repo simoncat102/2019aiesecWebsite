@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AIESEC in taiwan - Register</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/icon2.png" />
+
+</head>
+
+<body>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+
+    <script>
+        jQuery.get("https://auth.aiesec.org.tw/?entry=campaignInfos&type=glp", function(data) {
+
+            $.each(data, function(index, value) {
+                console.log(value);
+
+                $('#00N70000002UFkc').append(
+                    `<option>${value}</option> <br>`
+                )
+
+            });
+        
+        });
+    </script>
+    
+        <script>
+        jQuery.get("https://auth.aiesec.org.tw/?entry=register", function(data) {
+
+
+            console.log(data);
+
+        });
+    </script>
+
+
+</body></html>

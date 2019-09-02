@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>報名海外青創說明會</title>
+
+    <!--    css for this page-->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/recruitment.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/icon2.png" />
+</head>
+
+<body>
+    <div class="row">
+        <div class="container">
+            <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" name="gip_form">
+                <table class="table table-borderless fixed">
+                    <!--      中文名子、姓名-->
+                    <tr>
+                        <td> <input class="form-control" id="last_name" maxlength="80" name="last_name" required="" size="20" type="text" placeholder="中文姓氏" oninvalid="this.setCustomValidity('輸入您的中文姓氏')" oninput="setCustomValidity('')" /></td>
+                        <td><input class="form-control" id="first_name" maxlength="40" name="first_name" required="" size="20" type="text" placeholder="中文姓名" required oninvalid="this.setCustomValidity('輸入您的中文名字')" oninput="setCustomValidity('')" /></td>
+                    </tr>
+                    <!--       英文全名、性別-->
+                    <tr>
+                        <td>
+                            <input class="form-control" id="00N70000002UKfP" maxlength="255" name="00N70000002UKfP" required="" size="20" type="text" placeholder="英文全名 e.g. Winnie Zheng" required oninvalid="this.setCustomValidity('輸入您護照上的英文姓名')" oninput="setCustomValidity('')" />
+                        </td>
+                        <td>
+                            <select class="form-control" id="00N70000002U9LK" title="Gender" name="00N70000002U9LK">
+
+                                <option value="default">性別</option>
+                                <option value="Male">男性</option>
+                                <option value="Female">女性</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <!--       手機號碼、電子郵件-->
+                    <tr>
+                        <td>
+                            <input class="form-control" id="phone" maxlength="40" name="phone" required="" size="20" type="text" required oninvalid="this.setCustomValidity('輸入一個有效的電話號碼, 格式：扣掉0，如960650075，共9碼')" oninput="setCustomValidity('')" pattern="(?:9)[0-9]{8}" placeholder="電話號碼 (格式：扣掉0，如960650075，共9碼)" />
+                        </td>
+                        <td>
+                            <input class="form-control" id="email" maxlength="80" name="email" required="" size="20" type="text" placeholder="電子郵件" required oninvalid="this.setCustomValidity('請輸入有效的電子郵件')" oninput="setCustomValidity('')" pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$" />
+                        </td>
+                    </tr>
+                    <!--                    facebook link-->
+                    <tr>
+                        <td>
+                            <input id="00N70000003CuDe" class="input form-control" type="text" name="00N70000003CuDe" maxlength="70" required oninvalid="this.setCustomValidity('輸入一個有效的Facebook 名稱, Example: 古淮語')" oninput="setCustomValidity('')" placeholder="Facebook 名稱, Example: 古淮語">
+
+                        </td>
+                    </tr>
+                    <!--       學校、學系-->
+                    <tr>
+                        <td>
+                            <select class="form-control" id="market" title="University/College" name="00N70000002UFkc" data-placeholder="搜尋學校">
+                                <option value="">大專院校</option>
+                           
+                            </select>
+
+                        </td>
+                        <td>
+                            <input class="form-control" id="00N70000002UFlf" maxlength="255" name="00N70000002UFlf" size="20" type="text" placeholder="大專院校主修及副修科系" required oninvalid="this.setCustomValidity('輸入您的大專院校主修及副修科系')" oninput="setCustomValidity('')" />
+                        </td>
+                    </tr>
+                    <!--       學位、入學年-->
+                    <tr>
+                        <td>
+                            <select class="form-control" id="00N70000002UFlp" title="Current/Final Degree" name="00N70000002UFlp">
+
+                                <option value="default">現在或最終學位</option>
+                                <option value="Bachelor">Bachelor 大專院校</option>
+                                <option value="Master">Master 碩士</option>
+                                <option value="Doctor">Doctor 博士</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="form-control" id="00N70000002UGB9" title="University/College/School Entrance Year" name="00N70000002UGB9">
+                                <option value="2018">入學年</option>
+                                <option value="2018">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>
+                                <option value="2014">2014</option>
+
+
+                            </select>
+                        </td>
+                    </tr>
+                    <!--       資訊來源、說明會場次-->
+                    <tr>
+                        <td>
+                            <select class="form-control" id="00N70000002UFlz" title="Information Channel" name="00N70000002UFlz">
+                                <option value="default">從什麼管道得知海外青創實習</option>
+                                <option value="親朋好友介紹">親朋好友介紹(包含看到朋友的PO文)</option>
+                                <option value="校園擺攤活動">校園擺攤活動</option>
+                                <option value="Facebook 粉絲專頁">Facebook 粉絲專頁</option>
+                                <option value="AIESEC官方網站">AIESEC官方網站</option>
+                                <option value="海報">海報</option>
+                                <option value="宣傳單">宣傳單</option>
+                                <option value="曾經參與過AIESEC舉辦的活動">曾經參與過AIESEC舉辦的活動</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="form-control" id="event" name="00N70000002UFkc" title="大專院校">
+                                <option selected="selected">選擇說明會場次</option>
+
+                            </select>
+                        </td>
+                    </tr>
+
+
+
+
+                </table>
+                <div class="container">
+                    <input type="submit" id="submit_button" name="submit" clicked="false" class="send btn btn-primary btn-recruit center mt-5" value="報名說明會">
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <input name="oid" type="hidden" value="00D70000000IhvY" />
+    <input name="retURL" type="hidden" value="https://www.aiesec.org.tw/%E5%80%8B%E4%BA%BA%E5%8F%83%E8%88%87%E5%B0%88%E6%A1%88/%E6%B5%B7%E5%A4%96%E9%9D%92%E5%89%B5/%E6%B5%B7%E5%A4%96%E9%9D%92%E5%89%B5-%E5%AE%8C%E6%88%90%E5%A0%B1%E5%90%8D/" />
+    <input name="rating" type="hidden" value="Warm" />
+    <input name="00N70000002UFkn" type="hidden" value="OGE" />
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <script>
+        jQuery.get("https://auth.aiesec.org.tw/?entry=campaignInfos&type=gt", function(data) {
+
+
+
+            $.each(data, function(index, value) {
+                console.log(value);
+
+                $('#event').append(
+                    `<option>${value}</option> <br>`
+                )
+
+            });
+
+        });
+    </script>
+        <script>
+        jQuery.get("https://auth.aiesec.org.tw/?entry=market", function(data) {
+
+
+
+            $.each(data, function(index, value) {
+                console.log(value);
+
+                $('#market').append(
+                    `<option>${value}</option> <br>`
+                )
+
+            });
+
+        });
+    </script>
+</body></html>
