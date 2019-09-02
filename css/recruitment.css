@@ -1,0 +1,18 @@
+table.fixed {
+    table-layout: fixed;
+    width: 100%;
+    word-break: break-all;
+}
+
+.btn-recruit {
+    width: 300px;
+
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+
+}

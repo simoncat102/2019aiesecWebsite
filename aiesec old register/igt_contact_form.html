@@ -1,0 +1,272 @@
+<div style="position: relative;">
+    <form id="igv-contact-form" action="mailto:anghsuan.lee@aiesec.net;" method="POST" accept-charset="UTF-8">
+        <div class="g-grid">
+            <div class="g-block size-66 e-form-title">
+                <h2>連絡我們</h2>
+            </div>
+        </div>
+        <div class="g-grid">
+            <div class="g-block size-33 e-form-element">
+                <input id="name" type="text" name="name" required placeholder="姓名">
+            </div>
+            <div class="g-block size-33 e-form-element">
+                <input id="email" type="text" name="email" required placeholder="電子郵件">
+            </div>
+            <div class="g-block size-33 e-form-element">
+                <select id="lc-mail" name="responsible-mail">
+                    <option selected="selected" value="anghsuan.lee@aiesec.net">Anghsuan Lee | anghsuan.lee@aiesec.net</option>
+                </select>
+            </div>
+        </div>
+        <div class="g-grid">
+            <div class="g-block size-100 e-form-element">
+                <textarea rows="5" name="comments" required placeholder="您從事的產業、希望我們能如何協助您、請問您在尋找哪類型的國際人才?"></textarea>
+            </div>
+        </div>
+        <div class="g-grid">
+            <div class="g-block size-100 e-form-submit">
+                <input type="submit" id="submit" name="submit" clicked="false" value="開始合作">
+            </div>
+        </div>
+    </form>
+
+    <!-- Form loading AJAX icon, needs to seperate to different file later -->
+    <div id="form-loading" style="display: none; position: absolute; top: 0%; width: 100%; height: 100%; background-color: rgba(0, 0, 0, .1);">
+        <div class="lds-css ng-scope" style="width: 200px; height: 200px; margin: auto; position: relative; top: 50%; transform: translateY(-50%);">
+            <div class="lds-spin" style="100%; height:100%;">
+                <div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+            </div>
+            <style type="text/css">
+                @keyframes lds-spin {
+                    0% {
+                        opacity: 1;
+                        -webkit-transform: scale(1.1, 1.1);
+                        transform: scale(1.1, 1.1);
+                    }
+                    100% {
+                        opacity: 0;
+                        -webkit-transform: scale(1, 1);
+                        transform: scale(1, 1);
+                    }
+                }
+
+                @-webkit-keyframes lds-spin {
+                    0% {
+                        opacity: 1;
+                        -webkit-transform: scale(1.1, 1.1);
+                        transform: scale(1.1, 1.1);
+                    }
+                    100% {
+                        opacity: 0;
+                        -webkit-transform: scale(1, 1);
+                        transform: scale(1, 1);
+                    }
+                }
+
+                .lds-spin {
+                    position: relative;
+                }
+
+                .lds-spin div>div {
+                    position: absolute;
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    background: #037ef3;
+                    -webkit-animation: lds-spin 1s linear infinite;
+                    animation: lds-spin 1s linear infinite;
+                }
+
+                .lds-spin div:nth-child(1)>div {
+                    left: 144px;
+                    top: 84px;
+                    -webkit-animation-delay: -0.875s;
+                    animation-delay: -0.875s;
+                }
+
+                .lds-spin>div:nth-child(1) {
+                    -webkit-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                    -webkit-transform-origin: 160px 100px;
+                    transform-origin: 160px 100px;
+                }
+
+                .lds-spin div:nth-child(2)>div {
+                    left: 126.42640685999999px;
+                    top: 126.42640685999999px;
+                    -webkit-animation-delay: -0.75s;
+                    animation-delay: -0.75s;
+                }
+
+                .lds-spin>div:nth-child(2) {
+                    -webkit-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                    -webkit-transform-origin: 142.42640686px 142.42640686px;
+                    transform-origin: 142.42640686px 142.42640686px;
+                }
+
+                .lds-spin div:nth-child(3)>div {
+                    left: 84px;
+                    top: 144px;
+                    -webkit-animation-delay: -0.625s;
+                    animation-delay: -0.625s;
+                }
+
+                .lds-spin>div:nth-child(3) {
+                    -webkit-transform: rotate(90deg);
+                    transform: rotate(90deg);
+                    -webkit-transform-origin: 100px 160px;
+                    transform-origin: 100px 160px;
+                }
+
+                .lds-spin div:nth-child(4)>div {
+                    left: 41.57359314px;
+                    top: 126.42640685999999px;
+                    -webkit-animation-delay: -0.5s;
+                    animation-delay: -0.5s;
+                }
+
+                .lds-spin>div:nth-child(4) {
+                    -webkit-transform: rotate(135deg);
+                    transform: rotate(135deg);
+                    -webkit-transform-origin: 57.57359314px 142.42640686px;
+                    transform-origin: 57.57359314px 142.42640686px;
+                }
+
+                .lds-spin div:nth-child(5)>div {
+                    left: 24px;
+                    top: 84px;
+                    -webkit-animation-delay: -0.375s;
+                    animation-delay: -0.375s;
+                }
+
+                .lds-spin>div:nth-child(5) {
+                    -webkit-transform: rotate(180deg);
+                    transform: rotate(180deg);
+                    -webkit-transform-origin: 40px 100px;
+                    transform-origin: 40px 100px;
+                }
+
+                .lds-spin div:nth-child(6)>div {
+                    left: 41.57359314px;
+                    top: 41.57359314px;
+                    -webkit-animation-delay: -0.25s;
+                    animation-delay: -0.25s;
+                }
+
+                .lds-spin>div:nth-child(6) {
+                    -webkit-transform: rotate(225deg);
+                    transform: rotate(225deg);
+                    -webkit-transform-origin: 57.57359314px 57.57359314px;
+                    transform-origin: 57.57359314px 57.57359314px;
+                }
+
+                .lds-spin div:nth-child(7)>div {
+                    left: 84px;
+                    top: 24px;
+                    -webkit-animation-delay: -0.125s;
+                    animation-delay: -0.125s;
+                }
+
+                .lds-spin>div:nth-child(7) {
+                    -webkit-transform: rotate(270deg);
+                    transform: rotate(270deg);
+                    -webkit-transform-origin: 100px 40px;
+                    transform-origin: 100px 40px;
+                }
+
+                .lds-spin div:nth-child(8)>div {
+                    left: 126.42640685999999px;
+                    top: 41.57359314px;
+                    -webkit-animation-delay: 0s;
+                    animation-delay: 0s;
+                }
+
+                .lds-spin>div:nth-child(8) {
+                    -webkit-transform: rotate(315deg);
+                    transform: rotate(315deg);
+                    -webkit-transform-origin: 142.42640686px 57.57359314px;
+                    transform-origin: 142.42640686px 57.57359314px;
+                }
+
+                .lds-spin div:nth-child(9)>div {
+                    left: 144px;
+                    top: 84px;
+                    -webkit-animation-delay: 0.125s;
+                    animation-delay: 0.125s;
+                }
+
+                .lds-spin>div:nth-child(9) {
+                    -webkit-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                    -webkit-transform-origin: 160px 100px;
+                    transform-origin: 160px 100px;
+                }
+
+                .lds-spin {
+                    width: 200px !important;
+                    height: 200px !important;
+                    -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+                    transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+                }
+            </style>
+        </div>
+    </div>
+
+    <!-- Using ajaxForm to do process, suggest move to different file later -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha384-FzT3vTVGXqf7wRfy8k4BiyzvbNfeYjK+frTVqZeNDFl8woCbF0CYG6g2fMEFFo/i" crossorigin="anonymous"></script>
+
+    <script type='text/javascript'>
+        jQuery(document).ready(function($) {
+            jQuery('#submit_button').click(function($) {
+                jQuery('#submit_button').attr('clicked', 'true');
+            });
+
+            jQuery('#responsible-mail').change(function($) {
+                jQuery('#igv-contact-form').attr('action', 'mailto:' + jQuery('#responsible-mail').val());
+            });
+
+            var options = {
+                beforeSubmit: function(arr, $form, options) {
+                    jQuery('#form-loading').show();
+                },
+                dataType: "json",
+                success: function(res, status, xhr) {
+                    if (confirm("謝謝您連絡我們，我們的團隊會在24小時內回覆您")) {
+                        window.location.reload();
+                    }
+                },
+                error: function(xhr, status, err) {
+                    if (confirm(err)) {
+                        confirm("錯誤");
+                        window.location.reload();
+                    }
+                }
+            };
+            //jQuery('#igv-contact-form').ajaxForm(options);
+        });
+    </script>
+</div>

@@ -1,0 +1,385 @@
+<div style="position: relative;">
+    <form action="{path-gis_reg_process}" method="POST" class="regform" id="oge-regist-form" accept-charset="UTF-8" style="transform:0.4s;">
+        <div class="g-grid">
+            <div class="g-block size-66 e-form-title">
+                <h2>報名開始您的旅程</h2>
+            </div>
+        </div>
+        <div class="g-grid">
+            <div class="g-block size-50 e-form-element">
+                <input id="last_name" class="input" type="text" maxlength="50" name="last_name" required oninvalid="this.setCustomValidity('輸入您的中文姓氏')" oninput="setCustomValidity('')" placeholder="姓氏">
+            </div>
+            <div class="g-block size-50 e-form-element">
+                <input id="first_name" class="input" type="text" name="first_name" maxlength="50" required oninvalid="this.setCustomValidity('輸入您的中文名字')" oninput="setCustomValidity('')" placeholder="名字">
+            </div>
+            <div class="g-block size-50 e-form-element">
+                <input id="english_last_name" class="input" type="text" maxlength="50" name="english_last_name" required oninvalid="this.setCustomValidity('輸入您護照上的英文姓氏')" oninput="setCustomValidity('')" placeholder="護照上的英文姓氏">
+            </div>
+            <div class="g-block size-50 e-form-element">
+                <input id="english_first_name" class="input" type="text" name="english_first_name" maxlength="50" required oninvalid="this.setCustomValidity('輸入您護照上的英文名字')" oninput="setCustomValidity('')" placeholder="護照上的英文名字">
+            </div>
+            <div class="g-block size-50 e-form-element">
+                <input id="email" class="input" type="text" name="email" maxlength="50" required oninvalid="this.setCustomValidity('請輸入有效的電子郵件')" oninput="setCustomValidity('')" pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$" placeholder="電子郵件">
+            </div>
+            <div class="g-block size-50 e-form-element">
+                <input id="phone" class="input" type="text" name="phone" maxlength="50" required oninvalid="this.setCustomValidity('輸入一個有效的電話號碼, 格式：扣掉0，如960650075，共9碼')" oninput="setCustomValidity('')" pattern="(?:9)[0-9]{8}" placeholder="電話號碼">
+            </div>
+            <div class="g-block size-50 e-form-element">
+                <input id="password" class="input" type="password" name="password" required oninvalid="this.setCustomValidity('密碼必須至少8個字符，一個數字，一個大寫字母和一個小寫字母')" oninput="setCustomValidity('')" pattern="(?=^.{8,}$)^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" placeholder="密碼">
+            </div>
+            <div class="g-block size-50 e-form-element">
+                <select id="Gender__c" name="00N70000002U9LK" title="Gender">
+                    <option selected="selected">性別</option>
+                    <option value="Male">生理男</option>
+                    <option value="Female">生理女</option>
+                </select>
+            </div>
+            <div class="g-block size-50 e-form-element">
+                <select id="00N70000002UFkc" name="00N70000002UFkc" title="{lead-name}">
+                    <option selected="selected">大專院校</option>
+                    {leads-option-list}
+                </select>
+                <!-- Use as market to LC search table. Won't displat -->
+                <select id="search-table" style="display: none;">
+                    <option selected="selected" value="">大專院校</option>
+                    {search-table}
+                </select>
+            </div>
+            <div class="g-block size-50 e-form-element">
+                <input class="readonly" id="localcommittee" name="localcommittee" title="{lc}" type="text" placeholder="指定分會(自動選擇)" readonly>
+            </div>
+            <div class="g-block size-50 e-form-element">
+                <input id="Bachelor_Major_Name__c" class="input" type="text" name="Bachelor_Major_Name__c" maxlength="50" required oninvalid="this.setCustomValidity('輸入您的大專院校主修及副修科系')" oninput="setCustomValidity('')" placeholder="大專院校主修及副修科系">
+            </div>
+            <div class="g-block size-50 e-form-element">
+                <select id="00N70000002UFlp" name="00N70000002UFlp" title="Current/Final Degree">
+                    <option selected="selected">現在或最終學位</option>
+                    <option value="Bachelor">Bachelor 大專院校</option>
+                    <option value="Master">Master 碩士</option>
+                    <option value="Doctor">Doctor 博士</option>
+                </select>
+            </div>
+            <div class="g-block size-50 e-form-element">
+                <select id="00N70000002UGB9" name="00N70000002UGB9" title="University/College/School Entrance Year">
+                    <option selected="selected">入學年</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                </select>
+            </div>
+            <div class="g-block size-50 e-form-element">
+                <select id="00N70000003DcRu" name="00N70000003DcRu" title="University/College/School Graduate Year">
+                    <option selected="selected">（預計）畢業年度</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                </select>
+            </div>
+            <div class="g-block size-50 e-form-element">
+                <input id="00N70000002UZD1" class="input" type="text" name="00N70000002UZD1" maxlength="255" required oninvalid="this.setCustomValidity('輸入語言能力相關證明')" oninput="setCustomValidity('')" placeholder="語言能力相關證明，並請按照Basic, Good, Excellent, Native四個標準判斷你的外語能力">
+            </div>
+            <div class="g-block size-50 e-form-element">
+                <select id="00N70000003D1au" name="00N70000003D1au" title="oGIP Motivation">
+                    <option selected="selected">什麼因素會讓你想要參加海外青創實習計劃?</option>
+                    <option value="海外工作經驗增加履歷競爭力 (Overseas work experience to improve resume)">海外工作經驗增加履歷競爭力 (Overseas work experience to improve resume)</option>
+                    <option value="擁有與異國同事共事經驗 (Experience work with diverse nationalities)">擁有與異國同事共事經驗 (Experience work with diverse nationalities)</option>
+                    <option value="支薪外又能獲得實作經驗 (Practical Work Experience)">支薪外又能獲得實作經驗 (Practical Work Experience)</option>
+                    <option value="異國文化體驗及交流 (Culture exposure)">異國文化體驗及交流 (Culture exposure)</option>
+                    <option value="提升自身的外語能力 (Enhance foreign language skills)">提升自身的外語能力 (Enhance foreign language skills)</option>
+                    <option value="培養個人的國際視野 (Develop international perspective)">培養個人的國際視野 (Develop international perspective)</option>
+                    <option value="實習國家為開發中國家 (Internship in developing countries)">實習國家為開發中國家 (Internship in developing countries)</option>
+                    <option value="實習公司的規模大小 (Company size)">實習公司的規模大小 (Company size)</option>
+                    <option value="成為世界需要的領袖 (Becoming a leader that the world needs)">成為世界需要的領袖 (Becoming a leader that the world needs)</option>
+                </select>
+            </div>
+            <div class="g-block size-50 e-form-element">
+                <select id="00N70000003D1az" name="00N70000003D1az" title="oGIP Decision Channel">
+                    <option selected="selected">在你做決定時，哪些管道會影響你比較多?</option>
+                    <option value="人力銀行的就業趨勢 (Insights from External Trends)">人力銀行的就業趨勢 (Insights from External Trends)</option>
+                    <option value="名人推薦(教授、專業人士) (Recommended by someone credible; Professor, Company executives, etc)">名人推薦(教授、專業人士) (Recommended by someone reputable)</option>
+                    <option value="親朋好友推薦 (Recommendation from friends or family)">親朋好友推薦 (Recommendation from friends or family)</option>
+                    <option value="facebook粉絲專頁 (Our Facebook Page/Post)">facebook粉絲專頁 (Our Facebook Page/Post)</option>
+                    <option value="PTT 相關版">PTT 相關版 (PTT)</option>
+                    <option value="學校公告/Email校內信(EX:職涯中心電子報) (School Notice Board or Email)">學校公告/Email校內信(EX:職涯中心電子報) (School Notice Board or Email)</option>
+                    <option value="廣告宣傳單與海報 (Flyers or Posters)">廣告宣傳單與海報 (Flyers or Posters)</option>
+                    <option value="職涯說明會 (Information Seminar)">職涯說明會 (Information Seminar)</option>
+                </select>
+            </div>
+            <div class="g-block size-50 e-form-element">
+                <input id="00N70000003D1b4" class="input" type="text" name="00N70000003D1b4" maxlength="255" required oninvalid="this.setCustomValidity('輸入您的想法')" oninput="setCustomValidity('')" placeholder="請跟我們分享您畢業後十年內的人生規劃，讓我們更加知道如何協助您?">
+            </div>
+        </div>
+        <div class="g-grid">
+            <div class="g-block size-100 e-form-policy">
+                <input id="terms" type="checkbox" required oninvalid="this.setCustomValidity('勾選同意條款和條件')" oninput="setCustomValidity('')">
+                <label for="terms">
+                <span class="required">
+                    我已閱讀並接受<a href="https://opportunities.aiesec.org/assets/terms.pdf" target="_blank"> 條款和條件。</a>
+                </span>
+                </label>
+            </div>
+            <div class="g-block size-100 e-form-submit">
+                <input type="submit" id="submit_button" name="submit" clicked="false" class="send" value="繳交海外青創報名表">
+            </div>
+            <div class="g-block size-100">
+                <!-- hidden values -->
+                <input type="hidden" name="website_url" value="{website_url}">
+                <div id="error" class="error">
+                    <p></p>
+                </div>
+                <input name="rating" type="hidden" value="Warm">
+                <input name="00N70000002UFkn" type="hidden" value="OGX GIP">
+                <input name="00N70000002ULec" type="hidden" value="1">
+                <input name="lead_source" type="hidden" value="Global Entrepreneur">
+                <input name="00N0g0000048O31" type="hidden" value="{interested_op_id}">
+            </div>
+        </div>
+    </form>
+
+    <!-- Form loading AJAX icon, needs to seperate to different file later -->
+    <div id="form-loading" style="display: none; position: absolute; top: 0%; width: 100%; height: 100%; background-color: rgba(0, 0, 0, .1);">
+        <div class="lds-css ng-scope" style="width: 200px; height: 200px; margin: auto; position: relative; top: 50%; transform: translateY(-50%);">
+            <div class="lds-spin" style="100%; height:100%;">
+                <div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+            </div>
+            <style type="text/css">
+                @keyframes lds-spin {
+                    0% {
+                        opacity: 1;
+                        -webkit-transform: scale(1.1, 1.1);
+                        transform: scale(1.1, 1.1);
+                    }
+                    100% {
+                        opacity: 0;
+                        -webkit-transform: scale(1, 1);
+                        transform: scale(1, 1);
+                    }
+                }
+
+                @-webkit-keyframes lds-spin {
+                    0% {
+                        opacity: 1;
+                        -webkit-transform: scale(1.1, 1.1);
+                        transform: scale(1.1, 1.1);
+                    }
+                    100% {
+                        opacity: 0;
+                        -webkit-transform: scale(1, 1);
+                        transform: scale(1, 1);
+                    }
+                }
+
+                .lds-spin {
+                    position: relative;
+                }
+
+                .lds-spin div>div {
+                    position: absolute;
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    background: #037ef3;
+                    -webkit-animation: lds-spin 1s linear infinite;
+                    animation: lds-spin 1s linear infinite;
+                }
+
+                .lds-spin div:nth-child(1)>div {
+                    left: 144px;
+                    top: 84px;
+                    -webkit-animation-delay: -0.875s;
+                    animation-delay: -0.875s;
+                }
+
+                .lds-spin>div:nth-child(1) {
+                    -webkit-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                    -webkit-transform-origin: 160px 100px;
+                    transform-origin: 160px 100px;
+                }
+
+                .lds-spin div:nth-child(2)>div {
+                    left: 126.42640685999999px;
+                    top: 126.42640685999999px;
+                    -webkit-animation-delay: -0.75s;
+                    animation-delay: -0.75s;
+                }
+
+                .lds-spin>div:nth-child(2) {
+                    -webkit-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                    -webkit-transform-origin: 142.42640686px 142.42640686px;
+                    transform-origin: 142.42640686px 142.42640686px;
+                }
+
+                .lds-spin div:nth-child(3)>div {
+                    left: 84px;
+                    top: 144px;
+                    -webkit-animation-delay: -0.625s;
+                    animation-delay: -0.625s;
+                }
+
+                .lds-spin>div:nth-child(3) {
+                    -webkit-transform: rotate(90deg);
+                    transform: rotate(90deg);
+                    -webkit-transform-origin: 100px 160px;
+                    transform-origin: 100px 160px;
+                }
+
+                .lds-spin div:nth-child(4)>div {
+                    left: 41.57359314px;
+                    top: 126.42640685999999px;
+                    -webkit-animation-delay: -0.5s;
+                    animation-delay: -0.5s;
+                }
+
+                .lds-spin>div:nth-child(4) {
+                    -webkit-transform: rotate(135deg);
+                    transform: rotate(135deg);
+                    -webkit-transform-origin: 57.57359314px 142.42640686px;
+                    transform-origin: 57.57359314px 142.42640686px;
+                }
+
+                .lds-spin div:nth-child(5)>div {
+                    left: 24px;
+                    top: 84px;
+                    -webkit-animation-delay: -0.375s;
+                    animation-delay: -0.375s;
+                }
+
+                .lds-spin>div:nth-child(5) {
+                    -webkit-transform: rotate(180deg);
+                    transform: rotate(180deg);
+                    -webkit-transform-origin: 40px 100px;
+                    transform-origin: 40px 100px;
+                }
+
+                .lds-spin div:nth-child(6)>div {
+                    left: 41.57359314px;
+                    top: 41.57359314px;
+                    -webkit-animation-delay: -0.25s;
+                    animation-delay: -0.25s;
+                }
+
+                .lds-spin>div:nth-child(6) {
+                    -webkit-transform: rotate(225deg);
+                    transform: rotate(225deg);
+                    -webkit-transform-origin: 57.57359314px 57.57359314px;
+                    transform-origin: 57.57359314px 57.57359314px;
+                }
+
+                .lds-spin div:nth-child(7)>div {
+                    left: 84px;
+                    top: 24px;
+                    -webkit-animation-delay: -0.125s;
+                    animation-delay: -0.125s;
+                }
+
+                .lds-spin>div:nth-child(7) {
+                    -webkit-transform: rotate(270deg);
+                    transform: rotate(270deg);
+                    -webkit-transform-origin: 100px 40px;
+                    transform-origin: 100px 40px;
+                }
+
+                .lds-spin div:nth-child(8)>div {
+                    left: 126.42640685999999px;
+                    top: 41.57359314px;
+                    -webkit-animation-delay: 0s;
+                    animation-delay: 0s;
+                }
+
+                .lds-spin>div:nth-child(8) {
+                    -webkit-transform: rotate(315deg);
+                    transform: rotate(315deg);
+                    -webkit-transform-origin: 142.42640686px 57.57359314px;
+                    transform-origin: 142.42640686px 57.57359314px;
+                }
+
+                .lds-spin div:nth-child(9)>div {
+                    left: 144px;
+                    top: 84px;
+                    -webkit-animation-delay: 0.125s;
+                    animation-delay: 0.125s;
+                }
+
+                .lds-spin>div:nth-child(9) {
+                    -webkit-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                    -webkit-transform-origin: 160px 100px;
+                    transform-origin: 160px 100px;
+                }
+
+                .lds-spin {
+                    width: 200px !important;
+                    height: 200px !important;
+                    -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+                    transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+                }
+            </style>
+        </div>
+    </div>
+
+    <!-- Using ajaxForm to do process, suggest move to different file later -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha384-FzT3vTVGXqf7wRfy8k4BiyzvbNfeYjK+frTVqZeNDFl8woCbF0CYG6g2fMEFFo/i" crossorigin="anonymous"></script>
+
+    <script type='text/javascript'>
+        jQuery(document).ready(function($) {
+            jQuery('#00N70000002UFkc').change(function($) {
+                var values = jQuery('#search-table option');
+                var lcs = jQuery.map(values, function(option) {
+                    return option.value;
+                });
+                jQuery('#localcommittee').val(lcs[jQuery('#00N70000002UFkc').prop('selectedIndex')]);
+            });
+
+            jQuery('#submit_button').click(function($) {
+                jQuery('#submit_button').attr('clicked', 'true');
+            });
+
+            var options = {
+                beforeSubmit: function(arr, $form, options) {
+                    jQuery('#form-loading').show();
+                },
+                dataType: "json",
+                success: function(res, status, xhr) {
+                    window.location = res.redirect;
+                },
+                error: function(xhr, status, err) {
+                    if (confirm(err)) {
+                        window.location.reload();
+                    }
+                }
+            };
+            jQuery('#oge-regist-form').ajaxForm(options);
+        });
+    </script>
+</div>
