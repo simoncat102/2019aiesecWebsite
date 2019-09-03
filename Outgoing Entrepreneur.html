@@ -33,26 +33,29 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
     <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
-    
-        <!--    air table-->
-    <script src="node_modules/airtable/build/airtable.browser.js"></script>
+
+    <!--    air table-->
+    <script src="https://cdn.jsdelivr.net/npm/airtable@0.6.0/build/airtable.browser.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/airtable@0.6.0/lib/airtable.min.js'></script>
+
 
 
 </head>
 <div id="overlay">
     <div class="spinner"></div>
 </div>
+
 <body id="page-top">
 
     <!-- Navigation -->
- <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
             <div class="navbar-brand js-scroll-trigger" href="index.html">
                 <div style="width: 150px">
-                   <a href="index.html">
-                    <img src="img/logo_290x60.png" class="nav-logo">
+                    <a href="index.html">
+                        <img src="img/logo_290x60.png" class="nav-logo">
                     </a>
                 </div>
             </div>
@@ -109,9 +112,9 @@
 
                     <p class="fontsize" id="info-oge">
                         <!--                       Global Entrepreneur is an internship experience where young people can explore<br><br>learn and contribute to the entrepreneurial world.-->
-                        </p>
-                        <br><br><br>
-                        <a align=left class="btn btn-primary btn-xl js-scroll-trigger btn-mobile" href="#video">了解更多</a>
+                    </p>
+                    <br><br><br>
+                    <a align=left class="btn btn-primary btn-xl js-scroll-trigger btn-mobile" href="#video">了解更多</a>
                 </div>
             </div>
             <br>
@@ -146,29 +149,29 @@
 
     <div class="count-font section-count">
         <div class="stat-wrap wow fadeIn" style="margin-bottom: 0px; background-color: #30c39e">
-               <div></div>
+            <div></div>
             <div align=center>
                 <div class="inline-flag">
-                   <span class="stat-number mainNav">100</span>
-                        <l class="stat-plus"> </l>
+                    <span class="stat-number mainNav">100</span>
+                    <l class="stat-plus"> </l>
                 </div>
                 <a class="stat-title">海外實習</a>
             </div>
             <div align=center>
                 <div class="inline-flag">
                     <span class="stat-number mainNav">300</span>
-                        <l class="stat-plus"> +</l>
+                    <l class="stat-plus"> +</l>
                 </div>
                 <a class="stat-title">合作公司</a>
             </div>
             <div align=center>
 
                 <div class="inline-flag">
-                   <span class="stat-number mainNav">9000</span>
-                        <l class="stat-plus"> +</l>
+                    <span class="stat-number mainNav">9000</span>
+                    <l class="stat-plus"> +</l>
                 </div>
                 <a class="stat-title">
-                所有達成的人數</a>
+                    所有達成的人數</a>
             </div>
             <div>
             </div>
@@ -404,7 +407,6 @@
     <script src="js/creative.min.js"></script>
     <script>
         new WOW().init();
-
     </script>
     <script>
         var Airtable = require('airtable');
@@ -425,12 +427,9 @@
                 `<a>${record.fields.oge_data_info}</a>`
             );
         });
-
     </script>
 
 
 
 
-</body>
-
-</html>
+</body></html>
