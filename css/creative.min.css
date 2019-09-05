@@ -222,7 +222,7 @@ padding-top: 30px;
 
     #mainNav .navbar-brand:focus,
     #mainNav .navbar-brand:hover {
-        color: color:rgba(255, 255, 255, .8)
+        color: white
     }
 
     #mainNav .navbar-nav > li.nav-item > a.nav-link {
@@ -245,7 +245,7 @@ padding-top: 30px;
     }
 
     #mainNav.navbar-shrink .navbar-brand {
-        color: rgba(255, 255, 255, .7)
+        color: white
     }
 
     #mainNav.navbar-shrink .navbar-brand:focus,
@@ -255,7 +255,7 @@ padding-top: 30px;
 
     #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
     #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
-        color: rgba(255, 255, 255, .8)
+        color: white
     }
 
     #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover,
