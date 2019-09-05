@@ -10,7 +10,7 @@ body{
     overflow-x: hidden;
 }
 
-.container-igv {
+.container-igt {
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
@@ -49,14 +49,15 @@ section{
     margin-top:0;
 }
 
-header.igvlanding{
+header.igtlanding{
     padding-top:3rem;
     padding-bottom:calc(7rem - 56px);
-    background-image:url(../img/igvheader.jpg);
+    background-image:url(../img/igtheader.jpg);
     background-attachment:fixed;
     background-position:center center;
     background-size:cover;
     height: 100%;
+    opacity: 0.8;
 }
 header.masthead hr{
     margin-top:30px;
@@ -164,13 +165,13 @@ header.masthead p{
    font-family:Microsoft JhengHei;
    color: #666666;
    font-size: 18px; 
-   letter-spacing: 0.5px;
 }
-.igvinfo-text{
+.igtinfo-text{
    font-family:Microsoft JhengHei;
    color: #666666;
    font-size: 18px;
    line-height: 28px;
+    letter-spacing: 0.5px;
 }
 .why-choose-text{
     font-family:Microsoft JhengHei;
@@ -375,23 +376,23 @@ h3.five-reason-title{
 p.five-reason-info{
     font-size: 16px;
 }
+.why_img{
+    width: 50%;
+    height: 50%;
+}
 .provides_img{
     height: 85%;
     width: 85%;
-}
-.project_img{
-    height: 45%;
-    width: 45%;
 }
 
 @media screen and (max-width:480px) {
     header {
         margin: auto;
     }
-    header.igvlanding {
+    header.igtlanding {
         padding-top: 10rem;
         padding-bottom: calc(10rem - 56px);
-        background-image: url(../img/gt_default.png);
+        background-image: url(../img/igtheader.jpg);
         background-position: center center;
         background-size: cover;
         background-attachment: fixed;
@@ -442,8 +443,8 @@ p.five-reason-info{
 
     }
     .subheader{
-        width: 85%;
-        height: 85%;
+        width: 15%;
+        height: 15%;
         margin-bottom: 1rem;
     }
     section{
