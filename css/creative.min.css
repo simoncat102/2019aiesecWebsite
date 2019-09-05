@@ -798,6 +798,14 @@ img.ogte {
 
 @media screen and (max-width:480px) {
 
+    .header-font {
+
+        font-size: 26px;
+    }
+    .info-font {
+        font-size: 14px;
+    }
+
 
     .nav-logo {
         width: 80%;
@@ -879,8 +887,6 @@ img.ogte {
         color: black;
         font-family: Microsoft JhengHei;
         font-size: 12px;
-
-
     }
 
     .news-photo {
