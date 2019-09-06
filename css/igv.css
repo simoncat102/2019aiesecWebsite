@@ -459,6 +459,7 @@ p.five-reason-info {
     border-radius: 8px !important;
 }
 
+
 @media screen and (max-width:480px) {
     header {
         margin: auto;
