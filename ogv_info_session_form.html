@@ -10,7 +10,7 @@
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/recruitment.css">
-    <link rel="shortcut icon" type="image/x-icon" href="img/icon2.png"/>
+    <link rel="shortcut icon" type="image/x-icon" href="img/icon2.png" />
 </head>
 
 <body>
@@ -120,15 +120,18 @@
                 <div class="container">
                     <input type="submit" id="submit_button" name="submit" clicked="false" class="send btn btn-primary btn-recruit center mt-5" value="報名說明會">
                 </div>
+                
+<!--                hidden value-->
+                <input name="oid" type="hidden" value="00D70000000IhvY" />
+                <input name="retURL" type="hidden" value="https://www.aiesec.org.tw/%E5%80%8B%E4%BA%BA%E5%8F%83%E8%88%87%E5%B0%88%E6%A1%88/%E6%B5%B7%E5%A4%96%E6%88%90%E9%95%B7/%E6%B5%B7%E5%A4%96%E6%88%90%E9%95%B7-%E5%AE%8C%E6%88%90%E5%A0%B1%E5%90%8D/" />
+                <input name="rating" type="hidden" value="Warm" />
+                <input name="00N70000002UFkn" type="hidden" value="OGX GCDP" />
 
             </form>
         </div>
     </div>
 
-    <input name="oid" type="hidden" value="00D70000000IhvY" />
-    <input name="retURL" type="hidden" value="https://www.aiesec.org.tw/%E5%80%8B%E4%BA%BA%E5%8F%83%E8%88%87%E5%B0%88%E6%A1%88/%E6%B5%B7%E5%A4%96%E6%88%90%E9%95%B7/%E6%B5%B7%E5%A4%96%E6%88%90%E9%95%B7-%E5%AE%8C%E6%88%90%E5%A0%B1%E5%90%8D/" />
-    <input name="rating" type="hidden" value="Warm" />
-    <input name="00N70000002UFkn" type="hidden" value="OGX GCDP" />
+
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -153,6 +156,7 @@
             });
 
         });
+
     </script>
     <script>
         jQuery.get("https://auth.aiesec.org.tw/?entry=market", function(data) {
@@ -169,8 +173,11 @@
             });
 
         });
+
     </script>
-</body></html>
+</body>
+
+</html>
 
 
 <!--
