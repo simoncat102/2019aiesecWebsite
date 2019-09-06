@@ -53,7 +53,7 @@ section {
 }
 
 header.igtlanding {
-    padding-top: 3rem;
+    padding-top: 0rem;
     padding-bottom: calc(7rem - 56px);
     background-image: url(../img/igtheader.jpg);
     background-attachment: fixed;
@@ -437,13 +437,13 @@ p.five-reason-info {
     }
 
     h1.fontsize {
-        font-size: 40px;
+        font-size: 28px;
         text-align: center;
 
     }
 
     p.fontsize {
-        font-size: 14px;
+        font-size: 12px;
         text-align: center;
         letter-spacing: 2px;
 
@@ -477,7 +477,6 @@ p.five-reason-info {
     .subheader {
         width: 65%;
         height: 65%;
-        margin-bottom: 4rem;
     }
 
     section {
@@ -494,7 +493,7 @@ p.five-reason-info {
         font-size: 14px;
         line-height: 20px;
         letter-spacing: 1px;
-        margin-top: 3px;
+        margin-top: 3rem;
     }
 }
 

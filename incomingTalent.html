@@ -52,8 +52,8 @@
         <div class="container">
             <div class="navbar-brand js-scroll-trigger" href="index.html">
                 <div style="width: 150px">
-                    <a href="index.html">
-                        <img src="img/logo_290x60.png" class="nav-logo">
+                   <a href="index.html">
+                    <img src="img/logo_290x60.png" class="nav-logo">
                     </a>
                 </div>
             </div>
@@ -64,7 +64,8 @@
                 <ul class="navbar-nav ml-auto">
 
                     <li class="collapse-trigger">
-                        <a class="collapse-trigger" data-toggle="collapse" href="#colaboration1" role="button" aria-expanded="false" aria-controls="colaboration">青年參與計畫 <i class="fa fa-caret-down"></i>&nbsp;&nbsp;&nbsp;</a>
+                        <a class="collapse-trigger" data-toggle="collapse" href="#colaboration1" role="button" aria-expanded="false" aria-controls="colaboration">
+                            青年參與計畫 <i class="fa fa-caret-down"></i>&nbsp;&nbsp;&nbsp;</a>
                     </li>
 
                     <div class="collapse" id="colaboration1">
@@ -77,15 +78,19 @@
                     </div>
 
                     <li class="collapse-trigger">
-                        <a class="collapse-trigger" data-toggle="collapse" href="#colaboration" role="button" aria-expanded="false" aria-controls="colaboration">組織合作機會 <i class="fa fa-caret-down"></i></a>
+                        <a class="collapse-trigger" data-toggle="collapse" href="#colaboration" role="button" aria-expanded="false" aria-controls="colaboration">
+                            組織合作機會 <i class="fa fa-caret-down"></i></a>
                     </li>
 
                     <div class="collapse" id="colaboration">
                         <div class="collaspe-body">
-                            <a href="Incoming%20Volunteer.html" class="collapse-font">NGO 合作</a><br>
-                            <a href="incomingTalent.html" class="collapse-font">企業合作</a>
+                         <a href="Incoming%20Volunteer.html" class="collapse-font">全球青年在地發展</a><br>
+                            <a href="incomingTalent.html" class="collapse-font">全球人才實習</a>
                         </div>
                     </div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link js-scroll-trigger" href="joinUs.html" target="_blank" sytle="color=white">加入我們·秋季徵才</a>
+                    </li>
 
                     <li class="nav-item dropdown">
                         <a class="nav-link js-scroll-trigger" href="https://aiesec.org/search" target="_blank">尋找適合專案</a>
@@ -94,17 +99,20 @@
             </div>
         </div>
     </nav>
+
+    
+    
     <!--  header  -->
     <header class="igtlanding text-center text-white d-flex">
         <div class="container-igt my-auto">
             <div class="row">
 
                 <div class="col-lg-12">
-                    <h1 class="text-uppercase animated zoomIn fontsize" style="animation-duration: 1s;animation-delay: 0.5s">
+                    <h1 class="text-uppercase animated zoomIn header-font fontsize" style="animation-duration: 1s;animation-delay: 0.5s">
 
                         <strong>
                             <br><br>
-                            <a id="title-igv" class="fontsize" style="padding-top:50%">
+                            <a id="title-igv" class="fontsize" style="margin: 2rem 0">
                                 <!--  讓你顯得更與眾不同-->
                             </a>
 
@@ -152,12 +160,7 @@
                     <p class="section-heading wow fadeInDown section-title">與我們合作的四大理由</p>
                 </div>
             </div>
-        </div>
-        <br>
-        <div class="wow fadeInDown" style="animation-duration: 1.5s">
-            <p style="text-align: center" class="sdg-font">我們的海外成長計畫目的是讓所有認同AIESEC價值的青年能夠採取行動</p>
-        </div>
-        <div class="container-igt" style="padding-top: 2rem;padding-bottom: 0rem">
+        <div style="padding-top: 2rem;padding-bottom: 0rem">
             <div class="row">
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box mt-5 mx-auto wow fadeIn" data-wow-delay="0.5s">
@@ -201,6 +204,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
@@ -333,78 +337,40 @@
         </div>
     </section>
 
-    <!-- 與AIESEC合作的理由-->
-    <section id="reason" class="section-whbacolor why-choose-text">
-        <div class="container-igt section-whbacolor">
+ 
+<!--    聯絡我們-->
+       <section class="section-grbacolor">
+        <div class="row">
+            <div class="container">
+                    <table class="table table-borderless fixed">
+                        <h1>
+                            聯絡我們
+                        </h1>
+                        <tr>
+                            <td>
+                                <input class="form-control" id="org_name" maxlength="80" name="last_name" required size="20" type="text" placeholder="組織、校方代表姓名" oninvalid="this.setCustomValidity('務必填寫欄位')">
+                            </td>
+                            <td>
+                                <input class="form-control" id="job_name" maxlength="80" name="last_name" required="" size="20" type="text" placeholder="代表職稱" oninvalid="this.setCustomValidity('務必填寫欄位')">
+                            </td>
+                            <td>
+                                <input class="form-control" id="email" maxlength="80" name="email" required="" size="20" type="text" placeholder="電子郵件" required oninvalid="this.setCustomValidity('請輸入有效的電子郵件')" oninput="setCustomValidity('')" pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <textarea class="form-control" id="comments"  rows="5" name="comments" required placeholder="您的組織簡介、希望我們能如何協助您、請問您在尋找哪類型的國際志工？"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="container">
+                        <a href="mailto:taiwan@aiesec.net?subject=我有新的合作提案" target="_blank" class="sendbtn btn btn-primary center">提出合作申請</a>
+                    </div>
 
-
-            <p class="section-heading wow fadeInDown section-title">與我們合作的五大理由</p>
-
-            <br>
-            <div class="wow fadeInDown" style="animation-duration: 1.5s">
-                <p style="text-align: center" class="sdg-font">擁有世界最大青年網路，給學校每學期不同文化體驗。</p>
-            </div>
-            <div class="row mb-5">
-                <div class="col-lg-1-5 text-center">
-                    <div class="service-box mt-5 mx-auto wow fadeIn" data-wow-delay="0.5s">
-                        <img src="img/why_igv_01.png" class="fas fa-4x text-primary mb-5 five-reason">
-                    </div>
-                    <div class="service-box mt-2 mx-auto">
-                        <h3 class="mb-3 five-reason-title">多樣的青年體驗</h3>
-                        <hr class="gray">
-                        <p class="text-muted mb-0 line-height-35 section-text five-reason-info">擁有世界最大青年網路，<br>給學校每學期不同文化體驗。</p>
-                    </div>
-                </div>
-                <div class="col-lg-1-5 text-center">
-                    <div class="service-box mt-5 mx-auto wow fadeIn" data-wow-delay="0.5s">
-                        <img src="img/why_igv_02.png" class="fas fa-4x text-primary mb-5 five-reason">
-                    </div>
-                    <div class="service-box mt-2 mx-auto">
-
-                        <h3 class="mb-3 five-reason-title">純熟的計畫系統</h3>
-                        <hr class="gray">
-                        <p class="text-muted mb-0 line-height-35 section-text five-reason-info">全台歷時最久、分布最廣的<br>國際青年志工引進計畫。各縣市都有合作案例。</p>
-                    </div>
-                </div>
-                <div class="col-lg-1-5 text-center">
-                    <div class="service-box mt-5 mx-auto wow fadeIn" data-wow-delay="0.5s">
-                        <img src="img/why_igv_03.png" class="fas fa-4x text-primary mb-5 five-reason">
-                    </div>
-                    <div class="service-box mt-2 mx-auto">
-                        <h3 class="mb-3 five-reason-title">正向的影響力</h3>
-                        <hr class="gray">
-                        <p class="text-muted mb-0 line-height-35 section-text five-reason-info">
-                            以創造社會正面影響力<br>為出發，跟您一同培育學童正確國際觀。
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-1-5 text-center">
-                    <div class="service-box mt-5 mx-auto wow fadeIn" data-wow-delay="0.5s">
-                        <img src="img/why_igv_04.png" class="fas fa-4x text-primary mb-5 five-reason">
-                    </div>
-                    <div class="service-box mt-2 mx-auto">
-                        <h3 class="mb-3 five-reason-title">完整的職前訓練</h3>
-                        <hr class="gray">
-                        <p class="text-muted mb-0 line-height-35 section-text five-reason-info">
-                            提供志工抵台後完整接待與<br>基本授課訓練，減輕學校人事負擔。
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-1-5 text-center">
-                    <div class="service-box mt-5 mx-auto wow fadeIn" data-wow-delay="0.5s">
-                        <img src="img/why_igv_05.png" class="fas fa-4x text-primary mb-5 five-reason">
-                    </div>
-                    <div class="service-box mt-2 mx-auto">
-                        <h3 class="mb-3 five-reason-title">參與社會議題</h3>
-                        <hr class="gray">
-                        <p class="text-muted mb-0 line-height-35 section-text five-reason-info">
-                            我們重視個類型社會議題，<br>能針對學校所在社區，協同客製化志工教案與課外活動。
-                        </p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
+    
 
     <!-- The content of your page would go here. -->
 
