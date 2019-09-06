@@ -542,9 +542,7 @@ preloader.complete:after {
 .project-detail {
     color: black;
     font-family: Microsoft JhengHei;
-    font-size: 23px;
-
-
+    font-size: 20px;
 }
 
 .project-detail1 {
@@ -804,6 +802,7 @@ img.ogte {
 
         font-size: 26px;
     }
+
     .info-font {
         font-size: 14px;
     }
@@ -898,6 +897,16 @@ img.ogte {
     .nav-font {
         font-size: 12px;
     }
+
+    .project-detail {
+
+        font-size: 12px;
+    }
+    
+    .section-title{
+        font-size:18px;
+    }
+
 }
 
 

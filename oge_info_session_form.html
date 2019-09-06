@@ -59,7 +59,7 @@
                         <td>
                             <select class="form-control" id="market" title="University/College" name="00N70000002UFkc" data-placeholder="搜尋學校">
                                 <option value="">大專院校</option>
-                           
+
                             </select>
 
                         </td>
@@ -122,14 +122,18 @@
                     <input type="submit" id="submit_button" name="submit" clicked="false" class="send btn btn-primary btn-recruit center mt-5" value="報名說明會">
                 </div>
 
+                <!--    hidden value-->
+
+                <input name="oid" type="hidden" value="00D70000000IhvY" />
+                <input name="retURL" type="hidden" value="https://www.aiesec.org.tw/%E5%80%8B%E4%BA%BA%E5%8F%83%E8%88%87%E5%B0%88%E6%A1%88/%E6%B5%B7%E5%A4%96%E9%9D%92%E5%89%B5/%E6%B5%B7%E5%A4%96%E9%9D%92%E5%89%B5-%E5%AE%8C%E6%88%90%E5%A0%B1%E5%90%8D/" />
+                <input name="rating" type="hidden" value="Warm" />
+                <input name="00N70000002UFkn" type="hidden" value="OGE" />
+
             </form>
         </div>
     </div>
 
-    <input name="oid" type="hidden" value="00D70000000IhvY" />
-    <input name="retURL" type="hidden" value="https://www.aiesec.org.tw/%E5%80%8B%E4%BA%BA%E5%8F%83%E8%88%87%E5%B0%88%E6%A1%88/%E6%B5%B7%E5%A4%96%E9%9D%92%E5%89%B5/%E6%B5%B7%E5%A4%96%E9%9D%92%E5%89%B5-%E5%AE%8C%E6%88%90%E5%A0%B1%E5%90%8D/" />
-    <input name="rating" type="hidden" value="Warm" />
-    <input name="00N70000002UFkn" type="hidden" value="OGE" />
+
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -155,8 +159,9 @@
             });
 
         });
+
     </script>
-        <script>
+    <script>
         jQuery.get("https://auth.aiesec.org.tw/?entry=market", function(data) {
 
 
@@ -171,5 +176,8 @@
             });
 
         });
+
     </script>
-</body></html>
+</body>
+
+</html>
