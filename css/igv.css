@@ -195,6 +195,7 @@ header.masthead p{
 }
 .section-video{
     margin: 0rem; 
+    padding: 2rem 0;
 }
 .section-count{
     padding: 1rem 0;
@@ -382,6 +383,16 @@ p.five-reason-info{
 .project_img{
     height: 45%;
     width: 45%;
+}
+.stepNum{
+    font-size: 70px;
+    font-weight: 800;
+    color: #F85A40;
+}
+.subheader {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 1rem;
 }
 
 @media screen and (max-width:480px) {
