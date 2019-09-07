@@ -9,6 +9,15 @@ header.ogvhead {
     height: 100%;
 }
 
+.section-grbacolor {
+    background-color: #e6e6e6;
+    padding: 5%;
+}
+
+.section-whbacolor {
+    background-color: #fff;
+}
+
 hr {
     max-width: 100%;
     border-width: 1px;
@@ -303,6 +312,7 @@ p.fontsize {
 
     height: 100%;
 }
+
 .howto {
     width: 60%;
     height: 60%;
