@@ -272,6 +272,14 @@ header.masthead {
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width:480px) {
+    max-width: 100%;
+    height: auto;
+
 }
 
 header.masthead hr {
@@ -902,9 +910,9 @@ img.ogte {
 
         font-size: 12px;
     }
-    
-    .section-title{
-        font-size:18px;
+
+    .section-title {
+        font-size: 18px;
     }
 
 }
