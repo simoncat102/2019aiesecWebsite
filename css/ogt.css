@@ -9,6 +9,10 @@ body {
 
     overflow-x: hidden;
 }
+.section-grbacolor {
+    background-color: #e6e6e6;
+    padding: 5%;
+}
 
 hr {
     max-width: 100%;
