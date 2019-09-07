@@ -278,9 +278,11 @@ header.masthead {
 
 @media screen and (max-width:480px) {
     header.masthead {
-        background-image: url(../img/mobile-landing-page.png);      
+        background-image: linear-gradient(45deg, #037ef3, #81c1fe);
+
+/*        background-image: none;*/
         width: 100%;
-        height: 50%;
+        height: 40%;
     }
 
 }
@@ -917,7 +919,8 @@ img.ogte {
     .section-title {
         font-size: 18px;
     }
-    .mobile{
+
+    .mobile {
         display: none;
     }
 
