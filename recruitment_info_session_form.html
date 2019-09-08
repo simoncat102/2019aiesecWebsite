@@ -277,7 +277,7 @@
                             </select>
                         </td>
                         <td>
-                            <select class="form-control" id="event" name="00N70000003Dp4j" title="Latest Campaign Name">
+                            <select class="form-control" id="event" name="Campaign_ID" title="Campaign_ID">
                                 <option selected="selected">選擇說明會場次</option>
 
                             </select>
@@ -324,7 +324,7 @@
                 console.log(value);
 
                 $('#event').append(
-                      `<option value="${index}">${value}</option> <br>`
+                    `<option value="${index}">${value}</option> <br>`
                 )
 
             });
@@ -332,23 +332,7 @@
         });
 
     </script>
-    <script>
-        jQuery.get("https://auth.aiesec.org.tw/?entry=market", function(data) {
 
-
-
-            $.each(data, function(index, value) {
-                console.log(value);
-
-                $('#market').append(
-                    `<option>${value}</option> <br>`
-                )
-
-            });
-
-        });
-
-    </script>
 </body>
 
 </html>
