@@ -315,6 +315,9 @@ p.fontsize {
     height: 60%;
     margin-top: 4rem;
 }
+.pc-hidden{
+    display: none;
+}
 
 @media screen and (max-width:480px) {
     .howto {
