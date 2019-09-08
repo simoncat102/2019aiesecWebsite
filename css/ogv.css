@@ -319,8 +319,8 @@ p.fontsize {
 }
 
 .ogv_applyimg {
-    width: 75%;
-    height: 75%
+    width: 60%;
+    height: 60%
 }
 
 @media screen and (max-width:480px) {
