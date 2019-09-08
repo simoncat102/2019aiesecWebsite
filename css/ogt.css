@@ -50,7 +50,7 @@ section {
 header.ogtlanding {
     padding-top: 0rem;
     padding-bottom: calc(7rem - 56px);
-    background-image: url(../img/gt_default.png);
+    background-image: url(../img/gt_default.jpg);
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
@@ -331,7 +331,7 @@ p.fontsize {
     }
 
     header.ogtlanding {
-        background-image: url(../img/gt_default.png);
+        background-image: url(../img/gt_default.jpg);
         background-position: top;
         background-size: contain;
         width: 100%;
