@@ -316,9 +316,12 @@ p.fontsize {
 .howto {
     width: 60%;
     height: 60%;
-    margin-top: 4rem;
 }
 
+.ogv_applyimg {
+    width: 75%;
+    height: 75%
+}
 
 @media screen and (max-width:480px) {
 
@@ -376,5 +379,10 @@ p.fontsize {
 
     .btn-mobile {
         display: none;
+    }
+
+    .ogv_applyimg {
+        width: 40%;
+        height: 40%
     }
 }
