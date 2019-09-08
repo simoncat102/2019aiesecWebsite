@@ -375,6 +375,10 @@ p.fontsize {
     .btn-mobile {
         display: none;
     }
+    
+    .mobile-hidden{
+        display: none;
+    }
 
     .ogv_applyimg {
         width: 40%;
