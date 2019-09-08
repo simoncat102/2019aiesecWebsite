@@ -379,6 +379,10 @@ p.fontsize {
     height: 60%;
     margin-top: 4rem;
 }
+.oge_applyimg {
+    width: 60%;
+    height: 60%
+}
 
 @media screen and (max-width:480px) {
     .howto {
