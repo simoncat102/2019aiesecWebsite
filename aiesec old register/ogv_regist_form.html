@@ -1,4 +1,4 @@
-<form action="{REGISTER PATH}" method="POST" class="regform" id="ogv-regist-form" accept-charset="UTF-8" style="transform:0.4s;">
+<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" class="regform" id="ogv-regist-form" accept-charset="UTF-8" style="transform:0.4s;">
 
     <input id="last_name" class="input" type="text" maxlength="50" name="last_name" required oninvalid="this.setCustomValidity('輸入您的中文姓氏')" oninput="setCustomValidity('')" placeholder="姓氏">
     <input id="first_name" class="input" type="text" name="first_name" maxlength="50" required oninvalid="this.setCustomValidity('輸入您的中文名字')" oninput="setCustomValidity('')" placeholder="名字">
@@ -64,7 +64,7 @@
     <input type="submit" id="submit_button" name="submit" clicked="false" class="send" value="繳交海外成長報名表">
 
     <!-- hidden values -->
-    <input type="hidden" name="website_url" value="{RETURN URI}">
+<!--    <input type="hidden" name="website_url" value="{RETURN URI}">-->
     <input type="hidden" name="rating" value="Warm">
     <input type="hidden" name="00N70000002UFkn" value="OGX GCDP">
     <input type="hidden" name="00N70000002ULec" value="1">
