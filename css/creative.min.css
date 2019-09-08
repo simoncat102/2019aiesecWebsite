@@ -278,13 +278,11 @@ header.masthead {
 
 @media screen and (max-width:480px) {
     header.masthead {
-        /*        background-image: linear-gradient(45deg, #037ef3, #81c1fe);*/
         background-image: url(../img/landing_page_header.jpg);
         background-position: top;
         background-size: contain;
         width: 100%;
         height: 35%;
-
     }
 
 }

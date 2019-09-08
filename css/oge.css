@@ -379,6 +379,7 @@ p.fontsize {
     height: 60%;
     margin-top: 4rem;
 }
+
 .oge_applyimg {
     width: 60%;
     height: 60%
@@ -395,16 +396,11 @@ p.fontsize {
     }
 
     header.ogelanding {
-        padding-top: 10rem;
-        padding-bottom: calc(10rem - 56px);
         background-image: url(../img/ogeheader.jpg);
-        background-position: center center;
-        background-size: cover;
-        background-attachment: fixed;
-        opacity: 0.9;
-        height: 100%;
+        background-position: top;
+        background-size: contain;
         width: 100%;
-
+        height: 35%;
     }
 
     .header-font {
