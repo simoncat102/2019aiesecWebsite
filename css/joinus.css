@@ -8,8 +8,8 @@ header.joinus-head {
     height: 100%;
 }
 
-a.content{
-    color:white;
+a.content {
+    color: white;
 }
 
 @media screen and (max-width:480px) {
@@ -32,11 +32,13 @@ a.content{
         width: 5%;
         height: 5%;
     }
+
+    .mobile-hidden {
+        display: none;
+    }
+
 }
 
-.mobile-hidden {
-    display: none;
-}
 
 .bottom-item {
     position: absolute;
