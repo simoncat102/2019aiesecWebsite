@@ -1,7 +1,7 @@
 header.joinus-head {
     padding-top: 8rem;
     padding-bottom: calc(10rem - 56px);
-    background-image: url(../img/joinus_1.jpg);
+    background-image: url(../img/banner.jpg);
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
@@ -15,7 +15,7 @@ a.content {
 @media screen and (max-width:480px) {
 
     header.joinus-head {
-        background-image: url(../img/joinus.jpg);
+        background-image: url(../img/banner.jpg);
         background-position: top;
         background-size: contain;
         width: 100%;
