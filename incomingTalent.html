@@ -108,10 +108,10 @@
             <div class="row">
 
                 <div class="col-lg-12">
-                
+
                     <h1 class="text-uppercase animated zoomIn header-font fontsize" style="animation-duration: 1s;animation-delay: 0.5s">
                         <strong>
-<!--                            <br><br><br class="pc-hidden"><br class="pc-hidden"><br class="pc-hidden"><br class="pc-hidden"><br class="pc-hidden">-->
+                            <!--                            <br><br><br class="pc-hidden"><br class="pc-hidden"><br class="pc-hidden"><br class="pc-hidden"><br class="pc-hidden">-->
 
 
 
@@ -283,7 +283,7 @@
 
 
     <!-- AIESEC所會提供的-->
-<!--
+    <!--
     <section id="provides" class="section-whbacolor why-choose-text">
         <div class="container-igt">
             <div class="row">
@@ -343,7 +343,61 @@
 -->
 
 
+    <!-- 一開始即執行javascript的 init() function -->
+
+    <body onload="init()">
+        <div class="row">
+            <div class="container">
+                <form enctype="text/plain" accept-charset="utf-8">
+                    <div class="col-lg-12 text-center">
+                        <p class="section-heading wow fadeInDown section-title m-5">聯絡我們</p>
+                    </div>
+                    <table class="table table-borderless fixed rwd-table">
+
+                        <tr>
+                            <td>
+                                <!-- 寄件者姓名    -->
+                                <input id="nameText" type="text" name="Name" value size="60" placeholder="組織、校方代表姓名" required oninvalid="this.setCustomValidity('務必填寫欄位')" class="form-control">
+                            </td>
+                            <td>
+                                <!--                       title-->
+                                <input id="titleText" type="title" name="title" value size="60" aria-invalid="false" placeholder="職稱" required class="form-control">
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <!--                        phone-->
+                               <input id="telText" type="tel" name="Phone" value size="60" aria-invalid="false" placeholder="電話" required class="form-control">
+                            </td>
+                            <td>
+                                <!-- 郵件主旨 -->
+                              <input id="subText" type="text" name="Subject" value size="60" aria-invalid="false" placeholder="主旨" required class="form-control">
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td colspan="2">
+                    
+                                <textarea id="bodyText" name="your-message" cols="40" rows="10" aria-required="true" aria-invalid="false" placeholder="您的組織簡介、希望我們能如何協助您、請問您在尋找哪類型的國際志工？" required class="form-control"></textarea>
+                            </td>
+                        </tr>
+    
+                    </table>
+
+                    <!-- 傳送按鈕 -->
+                    <div class="container">
+                        <input type="button" value="送出訊息" onclick="submitHandler();" class="sendbtn btn btn-primary center mr-5 mb-5">
+                        <a id="mailTo"></a>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </body>
+
     <!--    聯絡我們-->
+    <!--
     <section class="section-grbacolor">
         <div class="row">
             <div class="container">
@@ -376,6 +430,7 @@
             </div>
         </div>
     </section>
+-->
     <!--    合作夥伴-->
     <section class="section-whbacolor">
         <div class="row">
@@ -470,7 +525,6 @@
 
     <script>
         new WOW().init();
-
     </script>
 
     <script>
@@ -492,11 +546,38 @@
                 `<a class="mobile-hidden">${record.fields.igt_data_info}</a>`
             );
         });
+    </script>
 
+    <script>
+        //宣告預設表單內容為空 （你想要的話也可以加東西）
+        var initSubject = '',
+            initBody = '';
+
+        //按下傳送按鈕後執行
+        function submitHandler() {
+            var to = "taiwan@aiesec.net"; //寫死的傳送對象 就是公司的信箱 不會顯示在網頁上
+            var name = nameText.value; //讀取ID為 nameTextuser 物件中的值
+            var title = titleText.value;
+            var tel = telText.value;
+            var subject = subText.value;
+
+            //把user填的資料都塞到 mail body 中
+            var body = "" + bodyText.value + '%0A%0A%0A'; //%0A是換行 換了三行
+            body += "From：" + nameText.value + '%0A';
+            body += "Title：" + titleText.value + '%0A';
+            body += "Tel：" + telText.value;
+            //傳送的主要程式碼
+            mailTo.href = "mailto:" + to + "?subject=" + subject + "&body=" + body;
+            mailTo.click();
+        }
+        //在body onload
+        function init() {
+            subText.value = initSubject;
+            toText.value = initTo;
+            bodyText.value = initBody;
+        }
     </script>
 
 
 
-</body>
-
-</html>
+</body></html>

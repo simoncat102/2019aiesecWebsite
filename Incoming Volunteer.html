@@ -107,7 +107,7 @@
                     <h1 class="text-uppercase animated zoomIn header-font fontsize" style="animation-duration: 1s;animation-delay: 0.5s">
 
                         <strong>
-                            <br><br>
+                            <br>
                             <a id="title-igv" class="fontsize" style="padding-top:50%">
                                 <!--  讓你顯得更與眾不同-->
                             </a>
@@ -460,34 +460,29 @@
                                 <input id="nameText" type="text" name="Name" value size="60" placeholder="組織、校方代表姓名" required oninvalid="this.setCustomValidity('務必填寫欄位')" class="form-control">
                             </td>
                             <td>
-                                <!--                       email-->
-                                <input id="emailText" type="email" name="Email" value size="60" placeholder="Email" required oninvalid="this.setCustomValidity('請輸入有效的電子郵件')" oninput="setCustomValidity('')" pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$" class="form-control">
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <td>
-                                <!--                        職稱-->
+                                <!--                       title-->
                                 <input id="titleText" type="title" name="title" value size="60" aria-invalid="false" placeholder="職稱" required class="form-control">
                             </td>
-                            <td>
-                                <!-- 寄件者電話 -->
-                                <input id="telText" type="tel" name="Phone" value size="60" aria-invalid="false" placeholder="電話" required class="form-control">
-                            </td>
+
                         </tr>
                         <tr>
-
+                            <td>
+                                <!--                        phone-->
+                               <input id="telText" type="tel" name="Phone" value size="60" aria-invalid="false" placeholder="電話" required class="form-control">
+                            </td>
                             <td>
                                 <!-- 郵件主旨 -->
-                                <input id="subText" type="text" name="Subject" value size="60" aria-invalid="false" placeholder="主旨" required class="form-control">
-
+                              <input id="subText" type="text" name="Subject" value size="60" aria-invalid="false" placeholder="主旨" required class="form-control">
                             </td>
                         </tr>
                         <tr>
-                            <td>
-                                <textarea id="bodyText" name="your-message" cols="40" rows="10" aria-required="true" aria-invalid="false" placeholder="你的訊息(Your Message)" required class="form-control"></textarea>
+
+                            <td colspan="2">
+                    
+                                <textarea id="bodyText" name="your-message" cols="40" rows="10" aria-required="true" aria-invalid="false" placeholder="您的組織簡介、希望我們能如何協助您、請問您在尋找哪類型的國際志工？" required class="form-control"></textarea>
                             </td>
                         </tr>
+    
                     </table>
 
                     <!-- 傳送按鈕 -->
@@ -656,14 +651,12 @@
             var to = "taiwan@aiesec.net"; //寫死的傳送對象 就是公司的信箱 不會顯示在網頁上
             var name = nameText.value; //讀取ID為 nameTextuser 物件中的值
             var title = titleText.value;
-            var email = emailText.value;
             var tel = telText.value;
             var subject = subText.value;
 
             //把user填的資料都塞到 mail body 中
             var body = "" + bodyText.value + '%0A%0A%0A'; //%0A是換行 換了三行
             body += "From：" + nameText.value + '%0A';
-            body += "Email：" + emailText.value + '%0A';
             body += "Title：" + titleText.value + '%0A';
             body += "Tel：" + telText.value;
             //傳送的主要程式碼

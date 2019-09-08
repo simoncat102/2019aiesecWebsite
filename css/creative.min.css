@@ -411,7 +411,8 @@ header.masthead p {
 
 .btn-primary {
     background-color: #037ef3;
-    border-color: #037ef3
+    border-color: #037ef3;
+    font-family: Microsoft JhengHei;
 }
 
 .btn-primary:active,
