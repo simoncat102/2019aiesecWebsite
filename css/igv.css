@@ -477,8 +477,8 @@ p.five-reason-info {
         background-size: cover;
         background-attachment: fixed;
         opacity: 0.9;
-        height: 100%;
-        width: 100%;
+        height: auto;
+        max-width: 100%;
 
     }
 
