@@ -396,6 +396,7 @@ p.fontsize {
     }
 
     header.ogelanding {
+        padding-top: 7rem;
         background-image: url(../img/ogeheader.jpg);
         background-position: top;
         background-size: contain;
@@ -445,8 +446,8 @@ p.fontsize {
     .btn-mobile {
         display: none;
     }
-    
-    .mobile-hidden{
+
+    .mobile-hidden {
         display: none;
     }
 }
