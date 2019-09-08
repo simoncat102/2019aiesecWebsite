@@ -15,16 +15,12 @@ a.content{
 @media screen and (max-width:480px) {
 
     header.joinus-head {
-        padding-top: 8rem;
-        padding-bottom: calc(10rem - 56px);
         background-image: url(../img/joinus.jpg);
-        background-position: center center;
-        background-size: cover;
-        background-attachment: fixed;
+        background-position: top;
+        background-size: contain;
+        width: 100%;
+        height: 35%;
         opacity: 0.8;
-        max-width: 100%;
-        height: auto;
-        width: auto;
     }
 
     .apply {
