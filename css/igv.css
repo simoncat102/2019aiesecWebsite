@@ -433,6 +433,7 @@ p.five-reason-info {
     height: 45%;
     width: 45%;
 }
+
 .project_img1 {
     height: 42.25%;
     width: 42.25%;
@@ -463,6 +464,10 @@ p.five-reason-info {
     border-radius: 8px !important;
 }
 
+.pc-hidden {
+    display: none;
+}
+
 
 @media screen and (max-width:480px) {
     header {
@@ -477,9 +482,12 @@ p.five-reason-info {
         background-size: cover;
         background-attachment: fixed;
         opacity: 0.9;
+
+    }
+
+    .igv-img-landing {
         height: auto;
         max-width: 100%;
-
     }
 
     h1.fontsize {
