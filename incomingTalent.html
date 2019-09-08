@@ -108,12 +108,15 @@
             <div class="row">
 
                 <div class="col-lg-12">
+                
                     <h1 class="text-uppercase animated zoomIn header-font fontsize" style="animation-duration: 1s;animation-delay: 0.5s">
-
                         <strong>
-                            <br><br>
-                            <a id="title-igt" class="fontsize" style="margin: 2rem 0">
-                                <!--  讓你顯得更與眾不同-->
+                            <br><br><br class="pc-hidden"><br class="pc-hidden"><br class="pc-hidden">
+
+
+
+                            <a id="title-igt" class="fontsize" style="margin-top:10rem">
+                                <!--  合作夥伴-->
                             </a>
 
                         </strong>
@@ -378,7 +381,7 @@
                 <div class="col-lg-12 text-center">
                     <p class="section-heading wow fadeInDown section-title">我們的合作夥伴</p>
                 </div>
-             <img src="img/partnership.png" class="partnership">
+                <img src="img/partnership.png" class="partnership">
 
             </div>
         </div>
@@ -386,7 +389,7 @@
 
 
     <!-- The content of your page would go here. -->
-   <footer class="footer-distributed" id=contact>
+    <footer class="footer-distributed" id=contact>
 
         <div class="footer-left">
 
@@ -481,7 +484,7 @@
             }
             console.log('Retrieved', record);
             $('#title-igt').append(
-                `<a>${record.fields.igt_data_title}</a>`
+                `<br class="pc-hidden"><a>${record.fields.igt_data_title}</a>`
             );
             $('#info-igt').append(
                 `<a class="mobile-hidden">${record.fields.igt_data_info}</a>`

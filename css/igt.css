@@ -427,17 +427,27 @@ p.five-reason-info {
     margin-right: auto;
 }
 
+.pc-hidden{
+    display: none;
+}
+
 @media screen and (max-width:480px) {
+    
+    .title{
+        margin-top:100px; 
+    }
+    
     header {
         margin: auto;
     }
 
     header.igtlanding {
+/*           padding-top: 2rem;*/
         background-image: url(../img/igtheader.jpg);
-        background-position: top;
-        background-size: contain;
+        background-position: bottom;
+        background-size: 170%;
         width: 100%;
-        height: 35%;
+        height: 40%;
     }
 
     h1.fontsize {
