@@ -57,56 +57,6 @@
                     <!--       學校、學系-->
                     <tr>
                         <td>
-                            <select class="form-control" id="market" title="University/College" name="00N70000002UFkc" data-placeholder="搜尋學校">
-                                <option value="">大專院校</option>
-
-                            </select>
-
-                        </td>
-                        <td>
-                            <input class="form-control" id="00N70000002UFlf" maxlength="255" name="00N70000002UFlf" size="20" type="text" placeholder="大專院校主修及副修科系" required oninvalid="this.setCustomValidity('輸入您的大專院校主修及副修科系')" oninput="setCustomValidity('')" />
-                        </td>
-                    </tr>
-                    <!--       學位、入學年-->
-                    <tr>
-                        <td>
-                            <select class="form-control" id="00N70000002UFlp" title="Current/Final Degree" name="00N70000002UFlp">
-
-                                <option value="default">現在或最終學位</option>
-                                <option value="Bachelor">Bachelor 大專院校</option>
-                                <option value="Master">Master 碩士</option>
-                                <option value="Doctor">Doctor 博士</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select class="form-control" id="00N70000002UGB9" title="University/College/School Entrance Year" name="00N70000002UGB9">
-                                <option value="2018">入學年</option>
-                                <option value="2018">2019</option>
-                                <option value="2018">2018</option>
-                                <option value="2017">2017</option>
-                                <option value="2016">2016</option>
-                                <option value="2015">2015</option>
-                                <option value="2014">2014</option>
-
-
-                            </select>
-                        </td>
-                    </tr>
-                    <!--       資訊來源、說明會場次-->
-                    <tr>
-                        <td>
-                            <select class="form-control" id="00N70000002UFlz" title="Information Channel" name="00N70000002UFlz">
-                                <option value="default">從什麼管道得知海外青創實習</option>
-                                <option value="親朋好友介紹">親朋好友介紹(包含看到朋友的PO文)</option>
-                                <option value="校園擺攤活動">校園擺攤活動</option>
-                                <option value="Facebook 粉絲專頁">Facebook 粉絲專頁</option>
-                                <option value="AIESEC官方網站">AIESEC官方網站</option>
-                                <option value="海報">海報</option>
-                                <option value="宣傳單">宣傳單</option>
-                                <option value="曾經參與過AIESEC舉辦的活動">曾經參與過AIESEC舉辦的活動</option>
-                            </select>
-                        </td>
-                        <td>
                             <select class="form-control" title="University/College" name="00N70000002UFkc" data-placeholder="搜尋學校">
                                 <option value="NCCU 國立政治大學">NCCU 國立政治大學</option>
                                 <option value="NTHU 國立清華大學">NTHU 國立清華大學</option>
@@ -285,6 +235,56 @@
                                 <option value="TBTS 基督教台灣浸會神學院">TBTS 基督教台灣浸會神學院</option>
                                 <option value="CC 臺北基督學院">CC 臺北基督學院</option>
                             </select>
+
+                        </td>
+                        <td>
+                            <input class="form-control" id="00N70000002UFlf" maxlength="255" name="00N70000002UFlf" size="20" type="text" placeholder="大專院校主修及副修科系" required oninvalid="this.setCustomValidity('輸入您的大專院校主修及副修科系')" oninput="setCustomValidity('')" />
+                        </td>
+                    </tr>
+                    <!--       學位、入學年-->
+                    <tr>
+                        <td>
+                            <select class="form-control" id="00N70000002UFlp" title="Current/Final Degree" name="00N70000002UFlp">
+
+                                <option value="default">現在或最終學位</option>
+                                <option value="Bachelor">Bachelor 大專院校</option>
+                                <option value="Master">Master 碩士</option>
+                                <option value="Doctor">Doctor 博士</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="form-control" id="00N70000002UGB9" title="University/College/School Entrance Year" name="00N70000002UGB9">
+                                <option value="2018">入學年</option>
+                                <option value="2018">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>
+                                <option value="2014">2014</option>
+
+
+                            </select>
+                        </td>
+                    </tr>
+                    <!--       資訊來源、說明會場次-->
+                    <tr>
+                        <td>
+                            <select class="form-control" id="00N70000002UFlz" title="Information Channel" name="00N70000002UFlz">
+                                <option value="default">從什麼管道得知海外青創實習</option>
+                                <option value="親朋好友介紹">親朋好友介紹(包含看到朋友的PO文)</option>
+                                <option value="校園擺攤活動">校園擺攤活動</option>
+                                <option value="Facebook 粉絲專頁">Facebook 粉絲專頁</option>
+                                <option value="AIESEC官方網站">AIESEC官方網站</option>
+                                <option value="海報">海報</option>
+                                <option value="宣傳單">宣傳單</option>
+                                <option value="曾經參與過AIESEC舉辦的活動">曾經參與過AIESEC舉辦的活動</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="form-control" id="event" name="Campaign_ID" title="Campaign_ID">
+                                <option selected="selected">選擇說明會場次</option>
+
+                            </select>
                         </td>
                     </tr>
 
@@ -299,7 +299,7 @@
                 <!--    hidden value-->
 
                 <input name="oid" type="hidden" value="00D70000000IhvY" />
-<!--                <input name="retURL" type="hidden" value="https://www.aiesec.org.tw/%E5%80%8B%E4%BA%BA%E5%8F%83%E8%88%87%E5%B0%88%E6%A1%88/%E6%B5%B7%E5%A4%96%E9%9D%92%E5%89%B5/%E6%B5%B7%E5%A4%96%E9%9D%92%E5%89%B5-%E5%AE%8C%E6%88%90%E5%A0%B1%E5%90%8D/" />-->
+                <!--                <input name="retURL" type="hidden" value="https://www.aiesec.org.tw/%E5%80%8B%E4%BA%BA%E5%8F%83%E8%88%87%E5%B0%88%E6%A1%88/%E6%B5%B7%E5%A4%96%E9%9D%92%E5%89%B5/%E6%B5%B7%E5%A4%96%E9%9D%92%E5%89%B5-%E5%AE%8C%E6%88%90%E5%A0%B1%E5%90%8D/" />-->
                 <input name="rating" type="hidden" value="Warm" />
                 <input name="00N70000002UFkn" type="hidden" value="OGE" />
 
@@ -319,7 +319,7 @@
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
     <script>
-        jQuery.get("https://auth.aiesec.org.tw/?entry=campaignInfos&type=gt", function(data) {
+        jQuery.get("https://auth.aiesec.org.tw/?entry=campaignInfos&type=ge", function(data) {
 
 
 
@@ -327,31 +327,12 @@
                 console.log(value);
 
                 $('#event').append(
-                      `<option value="${index}">${value}</option> <br>`
+                    `<option value="${index}">${value}</option> <br>`
                 )
 
             });
 
         });
-
     </script>
-    <script>
-        jQuery.get("https://auth.aiesec.org.tw/?entry=market", function(data) {
 
-
-
-            $.each(data, function(index, value) {
-                console.log(value);
-
-                $('#market').append(
-                    `<option>${value}</option> <br>`
-                )
-
-            });
-
-        });
-
-    </script>
-</body>
-
-</html>
+</body></html>
