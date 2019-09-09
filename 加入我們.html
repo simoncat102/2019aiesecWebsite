@@ -273,7 +273,12 @@
 
                         <h3 class="mb-3">2.填寫申請書</h3>
                         <hr class="gray">
+                        <!--
                         <a class="js-scroll-trigger" href="#form">
+                            <buttom class="btn btn-primary">填寫徵才申請書</buttom>
+                        </a>
+-->
+                        <a href="https://forms.gle/rh97L5WGvU6xuMsm7" onclick="window.open(this.href, 'mywin','left=20,top=20,width=600,height=650,toolbar=1,resizable=0'); return false;">
                             <buttom class="btn btn-primary">填寫徵才申請書</buttom>
                         </a>
                         <!--                        <p class="text-muted mb-0 line-height-35 section-text">？</p>-->
@@ -320,6 +325,7 @@
 
     </section>
 -->
+    <!--
     <section id="form" class="section-applybacolor">
         <div class="section-applybacolor">
             <div class="container">
@@ -331,9 +337,10 @@
 
         </div>
     </section>
+-->
     <!-- The content of your page would go here. -->
 
-       <footer class="footer-distributed" id=contact>
+    <footer class="footer-distributed" id=contact>
 
         <div class="footer-left">
 
@@ -348,7 +355,7 @@
                 ·
                 <a href="Outgoing%20Talent.html">海外實習</a>
                 ·
-                <a href="Outgoing%20Entrepreneur.html">海外青創</a> 
+                <a href="Outgoing%20Entrepreneur.html">海外青創</a>
                 ·
                 <a href="Incoming%20Volunteer.html">全球青年在地發展</a>
                 ·
@@ -413,6 +420,7 @@
 
     <script>
         new WOW().init();
+
     </script>
     <script>
         var Airtable = require('airtable');
@@ -433,6 +441,9 @@
                 `<a>${record.fields.ogv_data_info}</a>`
             );
         });
+
     </script>
 
-</body></html>
+</body>
+
+</html>
