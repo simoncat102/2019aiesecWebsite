@@ -17,9 +17,9 @@
 <body>
     <div class="row mt-5">
         <div class="container">
-                                    <div class="text-center">
-                        <h3 class="m-3">報名海外實習說明會</h3>
-                        </div>
+            <div class="text-center">
+                <h3 class="m-3">報名海外實習說明會</h3>
+            </div>
             <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" name="gip_form">
                 <table class="table table-borderless fixed">
                     <!--      中文名子、姓名-->
@@ -60,7 +60,7 @@
                     <!--       學校、學系-->
                     <tr>
                         <td>
-                           <select class="form-control" title="University/College" name="00N70000002UFkc" data-placeholder="搜尋學校">
+                            <select class="form-control" title="University/College" name="00N70000002UFkc" data-placeholder="搜尋學校">
                                 <option value="NCCU 國立政治大學">NCCU 國立政治大學</option>
                                 <option value="NTHU 國立清華大學">NTHU 國立清華大學</option>
                                 <option value="NTU 國立臺灣大學">NTU 國立臺灣大學</option>
@@ -296,16 +296,17 @@
 
                 </table>
                 <div class="container">
-                    <input type="submit" id="submit_button" name="submit" clicked="false" class="send btn btn-primary btn-recruit center mt-5" value="報名說明會" src="thanksPage.html">
+                    <input type="submit" id="submit_button" name="submit" clicked="false" class="send btn btn-primary btn-recruit center mt-5" value="報名說明會">
                 </div>
-                
-                    
-<!--    hidden value-->
 
-    <input name="oid" type="hidden" value="00D70000000IhvY" />
-<!--    <input name="retURL" type="hidden" value="https://www.aiesec.org.tw/%E5%80%8B%E4%BA%BA%E5%8F%83%E8%88%87%E5%B0%88%E6%A1%88/%E6%B5%B7%E5%A4%96%E5%AF%A6%E7%BF%92/%E6%B5%B7%E5%A4%96%E5%AF%A6%E7%BF%92-%E5%AE%8C%E6%88%90%E5%A0%B1%E5%90%8D/" />-->
-    <input name="rating" type="hidden" value="Warm" />
-    <input name="00N70000002UFkn" type="hidden" value="OGX GIP" />
+
+                <!--    hidden value-->
+
+                <input name="oid" type="hidden" value="00D70000000IhvY" />
+                <input name="retURL" type="hidden" value="https://www.aiesec.org.tw/thanksPage.html" />
+
+                <input name="rating" type="hidden" value="Warm" />
+                <input name="00N70000002UFkn" type="hidden" value="OGX GIP" />
 
             </form>
         </div>
@@ -330,14 +331,14 @@
                 console.log(value);
 
                 $('#event').append(
-                     `<option value="${index}">${value}</option> <br>`
+                    `<option value="${index}">${value}</option> <br>`
                 )
 
             });
 
         });
     </script>
-        <script>
+    <script>
         jQuery.get("https://auth.aiesec.org.tw/?entry=market", function(data) {
 
 
@@ -353,6 +354,6 @@
 
         });
     </script>
-    
+
 </body></html>
 

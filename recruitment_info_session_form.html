@@ -17,9 +17,9 @@
 <body>
     <div class="row">
         <div class="container">
-               <div class="text-center">
-                        <h3 class="m-3">報名秋季徵才說明會</h3>
-                    </div>
+            <div class="text-center">
+                <h3 class="m-3">報名秋季徵才說明會</h3>
+            </div>
             <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" name="glp_form">
                 <table class="table table-borderless fixed">
                     <!--      中文名子、姓名-->
@@ -289,10 +289,12 @@
 
                 </table>
                 <div class="container">
-                    <input type="submit" id="submit_button" name="submit" clicked="false" class="send btn btn-primary btn-recruit center mt-5" value="報名說明會" src="thanksPage.html">
+                    <input type="submit" id="submit_button" name="submit" clicked="false" class="send btn btn-primary btn-recruit center mt-5" value="報名說明會">
                 </div>
 
                 <!--                    hidden value-->
+                <input name="retURL" type="hidden" value="https://www.aiesec.org.tw/thanksPage.html" />
+
                 <input name="oid" type="hidden" value="00D70000000IhvY" />
                 <input name="retURL" type="hidden" value="https://www.aiesec.org.tw/%E5%8A%A0%E5%85%A5%E6%88%91%E5%80%91/%E5%8A%A0%E5%85%A5%E6%88%91%E5%80%91-%E5%AE%8C%E6%88%90%E5%A0%B1%E5%90%8D/" />
                 <input name="rating" type="hidden" value="Warm" />
@@ -330,9 +332,6 @@
             });
 
         });
-
     </script>
 
-</body>
-
-</html>
+</body></html>
