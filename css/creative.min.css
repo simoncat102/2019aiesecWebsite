@@ -7,10 +7,17 @@ html {
 
 }
 
+/*
 body {
     font-family: Merriweather, 'Helvetica Neue', Arial, sans-serif, '微軟正黑體';
     overflow-x: auto;
 
+}
+*/
+
+body {
+    font-family: Merriweather, 'Helvetica Neue', "Microsoft JhengHei", "微軟正黑體", sans-serif !important;
+    overflow-x: auto;
 }
 
 body {
@@ -268,7 +275,7 @@ padding-top: 30px;
 header.masthead {
     padding-top: 10rem;
     padding-bottom: calc(10rem - 56px);
-    background-image: url(../img/landing_page_header.jpg);
+    background-image: url(../img/.jpg);
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
@@ -278,11 +285,14 @@ header.masthead {
 
 @media screen and (max-width:480px) {
     header.masthead {
-        background-image: url(../img/landing_page_header.jpg);
         background-position: top;
         background-size: contain;
         width: 100%;
         height: 35%;
+        background-position: center center;
+            padding-top: 10rem;
+    padding-bottom: calc(10rem - 56px);
+
     }
 
 }
@@ -427,6 +437,33 @@ header.masthead p {
     font-family: Microsoft JhengHei;
     font-size: 72px;
 }
+
+.header-font-home {
+    color: #383838;
+    font-family: Microsoft JhengHei;
+    font-size: 72px;
+}
+
+.header-font_1 {
+    color: #383838;
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 2px;
+
+}
+
+.howto {
+    width: 60%;
+    height: 60%;
+}
+
+.ogv_applyimg {
+    width: 50%;
+    height: 50%
+}
+
 
 .bg-blue {
     background-color: #037ef3;

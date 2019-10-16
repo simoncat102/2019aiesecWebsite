@@ -47,7 +47,7 @@
 
 
     <!-- Navigation -->
-     <!-- Navigation -->
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
             <div class="navbar-brand js-scroll-trigger" href="index.html">
@@ -284,7 +284,7 @@
         <div class="container-igv">
             <p class="section-heading wow fadeInDown section-title">合作流程</p>
             <div class="row mb-5">
-<!--
+                <!--
                 <div class="col-lg-1-5 text-center wow fadeIn" data-wow-delay="0.5s">
                     <div class="service-box mt-3 mx-auto">
                         <p class="stepNum">1</p>
@@ -306,7 +306,7 @@
                         <h3 class="mb-3 five-reason-title">預約到訪時間</h3>
                         <hr class="gray">
                         <p class="text-muted mb-0 line-height-35 section-text five-reason-info">
-                            與專案負責人預約一小時到貴組織做進一步的專案說明 
+                            與專案負責人預約一小時到貴組織做進一步的專案說明
                         </p>
                     </div>
                 </div>
@@ -365,7 +365,7 @@
 
 
     <!--     IGV營隊特點-->
-   <!--  <section id="services" class="section-grbacolor why-choose-text">
+    <!--  <section id="services" class="section-grbacolor why-choose-text">
         <div class="container-igv">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -416,7 +416,7 @@
      -->
 
 
-
+    <!--營隊介紹-->
     <!--
     <div id=project class="section-applybacolor wow fadeIn" style="animation-duration: 1s" data-wow-delay="0.5s">
         <div class="wrapper">
@@ -442,13 +442,48 @@
         </div>
     </div>
 -->
+    <br>
+    <div class="container">
+        <p class="section-heading wow fadeInDown section-title">關於營隊</p>
 
+        <div class="tab">
+            <button class="tablinks" onclick="openCamp(event, 'elementry')" id="defaultOpen">國小營隊</button>
+            <button class="tablinks" onclick="openCamp(event, 'junior')">國中營隊</button>
+            <button class="tablinks" onclick="openCamp(event, 'senior')">高中營隊</button>
+        </div>
+
+
+        <div id="elementry" class="tabcontent">
+
+            <h3>國小營隊</h3>
+            <p>介紹國小營隊的簡單內文</p>
+            <a href="#">了解更多</a>
+
+
+        </div>
+
+        <div id="junior" class="tabcontent">
+            <h3>國中營隊</h3>
+            <p>介紹國中營隊的簡單內文</p>
+            <a href="#">了解更多</a>
+
+        </div>
+
+        <div id="senior" class="tabcontent">
+            <h3>高中營隊</h3>
+            <p>介紹高中營隊的簡單內文</p>
+            <a href="#">了解更多</a>
+
+        </div>
+
+    </div>
+<br><br>
 
     <!-- 一開始即執行javascript的 init() function -->
 
     <body onload="init()">
-        <div class="row">
-            <div class="container">
+        <div class="row section-grbacolor">
+            <div class="container ">
                 <form enctype="text/plain" accept-charset="utf-8">
                     <div class="col-lg-12 text-center">
                         <p class="section-heading wow fadeInDown section-title m-5">聯絡我們</p>
@@ -469,21 +504,21 @@
                         <tr>
                             <td>
                                 <!--                        phone-->
-                               <input id="telText" type="tel" name="Phone" value size="60" aria-invalid="false" placeholder="電話" required class="form-control">
+                                <input id="telText" type="tel" name="Phone" value size="60" aria-invalid="false" placeholder="電話" required class="form-control">
                             </td>
                             <td>
                                 <!-- 郵件主旨 -->
-                              <input id="subText" type="text" name="Subject" value size="60" aria-invalid="false" placeholder="主旨" required class="form-control">
+                                <input id="subText" type="text" name="Subject" value size="60" aria-invalid="false" placeholder="主旨" required class="form-control">
                             </td>
                         </tr>
                         <tr>
 
                             <td colspan="2">
-                    
+
                                 <textarea id="bodyText" name="your-message" cols="40" rows="10" aria-required="true" aria-invalid="false" placeholder="您的組織簡介、希望我們能如何協助您、請問您在尋找哪類型的國際志工？" required class="form-control"></textarea>
                             </td>
                         </tr>
-    
+
                     </table>
 
                     <!-- 傳送按鈕 -->
@@ -538,13 +573,13 @@
 
     <!-- The content of your page would go here. -->
 
-       <footer class="footer-distributed" id=contact>
+    <footer class="footer-distributed" id=contact>
 
         <div class="footer-left">
 
             <img src="img/aiesec%20logo.png" height="30%" width="30%">
 
-  <p class="footer-links microfont">
+            <p class="footer-links microfont">
                 <a href="index.html">首頁</a>
                 ·
                 <a href="index.html">AIESEC</a>
@@ -553,7 +588,7 @@
                 ·
                 <a href="outgoingTalent.html">海外實習</a>
                 ·
-                <a href="outgoingEntrepreneur.html">海外青創</a> 
+                <a href="outgoingEntrepreneur.html">海外青創</a>
                 ·
                 <a href="incomingVolunteer.html">全球青年在地發展</a>
                 ·
@@ -673,6 +708,26 @@
             toText.value = initTo;
             bodyText.value = initBody;
         }
+
+    </script>
+
+    <script>
+        function openCamp(evt, campName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(campName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
 
     </script>
 
